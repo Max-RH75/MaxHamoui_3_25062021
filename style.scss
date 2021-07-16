@@ -1,0 +1,30 @@
+@import "./esponsive";
+@import "./Sass/Utils/variables";
+@import "./Sass/Utils/mixins";
+@import "./Sass/Layouts/container";
+@import "./Sass/Layouts/header";
+@import "./Sass/Layouts/footer";
+@import "./Sass/Base/typographie";
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+a:link {
+	text-decoration: none;
+    color:black;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+footer {
+    .logo {
+        color: white;
+    }
+    color: white;
+    background-color: black;
+}

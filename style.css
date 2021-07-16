@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+.fonctions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fonctions__choix {
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 1.2rem;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 800px) {
+  .fonctions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/**/
+.blocmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px black solid;
+  border-radius: 20px;
+  margin-left: 0;
+}
+
+.blocmenu__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px black solid;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 9.4rem;
+}
+
+.blocmenu__contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*&--text{
+        }*/
+}
+
+.blocmenu__ico {
+  font-size: 1.5rem;
+  /*position: relative;
+          top: 40px;
+          right: 50px;*/
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1.8rem;
+  color: grey;
+}
+
+.plats {
+  border: 1px black solid;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+}
+
+header .lieu1 {
+  color: black;
+  background-color: yellow;
+}
+
+header h3, header p, header button {
+  background-color: grey;
+}
+
+/*CSS rules to specify families
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;*/
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  header .logo {
+    width: 9rem;
+  }
+  .headbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blocmenu {
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 20px;
+    /*&__contenu {
+            width: 100%;
+            height: 7rem;
+          }*/
+  }
+  .blocmenu__img {
+    border: 1px black solid;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.fonctions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fonctions__choix {
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 1.2rem;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 800px) {
+  .fonctions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/**/
+.blocmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px black solid;
+  border-radius: 20px;
+  margin-left: 0;
+}
+
+.blocmenu__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px black solid;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 9.4rem;
+}
+
+.blocmenu__contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*&--text{
+        }*/
+}
+
+.blocmenu__ico {
+  font-size: 1.5rem;
+  /*position: relative;
+          top: 40px;
+          right: 50px;*/
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1.8rem;
+  color: grey;
+}
+
+.plats {
+  border: 1px black solid;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+}
+
+header .lieu1 {
+  color: black;
+  background-color: yellow;
+}
+
+header h3, header p, header button {
+  background-color: grey;
+}
+
+/*CSS rules to specify families
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;*/
+body {
+  margin: 0;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+footer .logo {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
