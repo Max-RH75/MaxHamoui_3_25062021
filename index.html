@@ -12,38 +12,42 @@
 </head>
 
 <body>
-	<header>
+	<header class="headhome">
 
-		<div>
-			<img class="logo" src="Actifs/Logo/ohmyfood.png" alt="Nom du restaurant (ohmyfood)">
-        </div>
+			<img class="headhome__logo" src="Actifs/Logo/ohmyfood.png" alt="Nom du restaurant (ohmyfood)">
 
-		<p><span><i class="fas fa-map-marker-alt"></i></span>Paris, Belleville</p>
+	<div class="headhome__lieu">	
+		<p><span class="fas fa-map-marker-alt"></span>Paris, Belleville</p>
+	</div>	
+	<div class="headhome__text">
 
 		<h3>Reservez le menu qui vous convient</h3>
 
 		<p>Decouvrez des restaurants d'exception</p>
 
-		<button>Explorer nos restaurants</button>
+		<button class="headhome__btn">Explorer nos restaurants</button>
+
+	</div>
 
 	</header>
 
 	<h3>Fonctionnement</h3>
 
 
-	<ul>
-		<span>1</span>
-		<li>
+	<ul class="fonctions">
+		
+		<li class="fonctions__choix"><span class="num">1</span>
 			<span class="fas fa-mobile-alt"></span>
 			Choisissez un restaurant
 		</li>
-		<span>2</span>
-		<li>
+		
+		<li class="fonctions__choix"><span class="num">2</span>
 			<span class="fas fa-list-ul"></span>
 			Composez votre menu
 		</li>
-		<span>3</span>
-		<li><span class="fas fa-store"></span>
+		
+		<li class="fonctions__choix fonction__choix--actif"><span class="num">3</span>
+			<span class="fas fa-store"></span>
 			Dégustez un retaurant
 		</li>
 	</ul>
@@ -52,43 +56,59 @@
 
 	<p>Nouveau</p>
 
-	<figure>
-		<img class="imgmenu" src="Actifs/Restaurants/m1lpdgm.jpg">
-		<figcaption>
-			<h4>La palette du goût</h4>
-			<p>Ménilmontant</p>
-			<span class="fas fa-heart"></span>
-		</figcaption>
+	<section class="container">
+
+	<figure class="blocmenu"><a href="menu1.html">
+		<img class="blocmenu__img" src="Actifs/Restaurants/m1lpdgm.jpg">
+		<figcaption class="blocmenu__contenu">
+			<div class="blocmenu__contenu--text">
+				<h4>La palette du goût</h4>
+				<p>Ménilmontant</p>
+			</div>
+				<span class="blocmenu__ico blocmenu__ico--vide far fa-heart"></span>
+				<span class="blocmenu__ico blocmenu__ico--actif fas fa-heart"></span>
+		</figcaption></a>
 	</figure>
 
 	<p>Nouveau</p>
 
-	<figure>
-		<img class="imgmenu" src="Actifs/Restaurants/m2lnec.jpg">
-		<figcaption>
-			<h4>La note enchantée</h4>
-			<p>Charonne</p>
-			<span class="fas fa-heart"></span>
-		</figcaption>
+	<figure class="blocmenu"><a href="menu2.html">
+		<img class="blocmenu__img" src="Actifs/Restaurants/m2lnec.jpg">
+		<figcaption class="blocmenu__contenu">
+			<div class="blocmenu__contenu--text">
+				<h4>La note enchantée</h4>
+				<p>Charonne</p>
+			</div>
+				<span class="blocmenu__ico blocmenu__ico--vide far fa-heart"></span>
+				<span class="blocmenu__ico blocmenu__ico--actif fas fa-heart"></span>
+		</figcaption></a>
 	</figure>
 
-	<figure>
-		<img class="imgmenu" src="Actifs/Restaurants/m3alfcr.jpg">
-		<figcaption>
-			<h4>À la française</h4>
-			<p>Cité Rouge</p>
-			<span class="fas fa-heart"></span>
-		</figcaption>
+	<figure class="blocmenu"><a href="menu3.html">
+		<img class="blocmenu__img" src="Actifs/Restaurants/m3alfcr.jpg">
+		<figcaption class="blocmenu__contenu">
+			<div class="blocmenu__contenu--text">
+				<h4>À la française</h4>
+				<p>Cité Rouge</p>
+			</div>
+				<span class="blocmenu__ico blocmenu__ico--vide far fa-heart"></span>
+				<span class="blocmenu__ico blocmenu__ico--actif fas fa-heart"></span>
+			</figcaption></a>
 	</figure>
 
-	<figure>
-		<img class="imgmenu" src="Actifs/Restaurants/m4lddsfm.jpg">
-		<figcaption>
-			<h4>Le délice des sens</h4>
-			<p>Folie-Méricourt</p>
-			<span class="fas fa-heart"></span>
-		</figcaption>
+	<figure class="blocmenu"><a href="menu4.html">
+		<img class="blocmenu__img" src="Actifs/Restaurants/m4lddsfm.jpg">
+		<figcaption class="blocmenu__contenu">
+			<div class="blocmenu__contenu--text">
+				<h4>Le délice des sens</h4>
+				<p>Folie-Méricourt</p>
+			</div>
+				<span class="blocmenu__ico blocmenu__ico--vide far fa-heart"></span>
+				<span class="blocmenu__ico blocmenu__ico--actif fas fa-heart"></span>
+			</figcaption></a>
 	</figure>
+
+	</section>
 
 	<footer>
 
