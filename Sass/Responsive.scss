@@ -1,0 +1,42 @@
+@import "./Sass/Utils/variables";
+@import "./Sass/Utils/mixins";
+@import "./Sass/Layouts/container";
+@import "./Sass/Layouts/header";
+@import "./Sass/Layouts/nav";
+@import "./Sass/Base/typographie";
+
+@media only screen and (min-width : 321px) and (max-width : 500px) 
+    {
+    body 
+    {
+        width: 100%;
+    }
+    
+    .acceuil {
+        .logo 
+            {
+            width: 9rem;
+            }
+    }
+
+    .headbar 
+    {
+        display: flex;
+    }
+
+
+    .blocmenu {
+        width: 100%;
+        @include bordrond2;
+        &__img {
+            @include bordrond;
+            width: 100%;
+            object-fit: cover;
+        }
+          /*&__contenu {
+            width: 100%;
+            height: 7rem;
+          }*/
+        }
+    }
+      

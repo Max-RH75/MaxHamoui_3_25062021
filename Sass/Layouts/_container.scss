@@ -1,0 +1,48 @@
+.fonctions {
+    display: flex;
+    &__choix {
+        @include bordrond2;
+        padding: 1.2rem;
+    }
+    
+    
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    @media only screen and (min-width : 321px) and (max-width : 800px){
+        flex-direction: column;
+    }
+}/**/
+
+.blocmenu {
+    display: flex;
+    flex-direction: column;
+    @include bordrond2;
+    margin-left: 0;
+    &__img {
+        object-fit: cover;
+        @include bordrond;
+        width: 100%;
+        height: 9.4rem;
+    }
+    &__contenu {
+        display: flex;
+        justify-content: space-between;
+        /*&--text{
+        }*/
+      }
+      &__ico {
+          font-size: 1.5rem;
+          /*position: relative;
+          top: 40px;
+          right: 50px;*/
+          align-self: center;
+          margin-right: 1.8rem;
+          color: grey;
+      }
+    }
+
+    .plats {
+        @include bordrond2;
+        display: flex;
+        }
