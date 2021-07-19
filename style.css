@@ -17,15 +17,6 @@
   padding: 1.2rem;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 800px) {
-  .fonctions {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 /**/
 .blocmenu {
   display: -webkit-box;
@@ -60,7 +51,7 @@
         }*/
 }
 
-.blocmenu__ico {
+.blocmenu__contenu__ico {
   font-size: 1.5rem;
   /*position: relative;
           top: 40px;
@@ -80,55 +71,49 @@
   display: flex;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.headhome {
+  text-align: center;
 }
 
-header .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.headhome__logo {
   width: 20rem;
 }
 
-header .lieu1 {
+.headhome__lieu {
   color: black;
-  background-color: yellow;
+  background-color: #F6F6F6;
 }
 
-header h3, header p, header button {
-  background-color: grey;
+.headhome__text {
+  background-color: #EAEAEA;
+}
+
+.headmenu__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 9.4rem;
 }
 
 /*CSS rules to specify families
 
 font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive;*/
-@media only screen and (min-width: 321px) and (max-width: 500px) {
+@media only screen and (min-width: 321px) and (max-width: 750px) {
   body {
     width: 100%;
   }
-  header .logo {
-    width: 9rem;
-  }
-  .headbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  /*.headhome {
+        &__logo 
+            {
+            width: 12rem;
+            }
+    }*/
+  .fonctions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .blocmenu {
     width: 100%;
@@ -165,15 +150,6 @@ font-family: 'Shrikhand', cursive;*/
   padding: 1.2rem;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 800px) {
-  .fonctions {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 /**/
 .blocmenu {
   display: -webkit-box;
@@ -208,7 +184,7 @@ font-family: 'Shrikhand', cursive;*/
         }*/
 }
 
-.blocmenu__ico {
+.blocmenu__contenu__ico {
   font-size: 1.5rem;
   /*position: relative;
           top: 40px;
@@ -228,38 +204,28 @@ font-family: 'Shrikhand', cursive;*/
   display: flex;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.headhome {
+  text-align: center;
 }
 
-header .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.headhome__logo {
   width: 20rem;
 }
 
-header .lieu1 {
+.headhome__lieu {
   color: black;
-  background-color: yellow;
+  background-color: #F6F6F6;
 }
 
-header h3, header p, header button {
-  background-color: grey;
+.headhome__text {
+  background-color: #EAEAEA;
+}
+
+.headmenu__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 9.4rem;
 }
 
 /*CSS rules to specify families
@@ -269,9 +235,10 @@ font-family: 'Shrikhand', cursive;*/
 body {
   margin: 0;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-a:link {
+a:link, a:visited {
   text-decoration: none;
   color: black;
 }
@@ -286,7 +253,15 @@ footer {
   background-color: black;
 }
 
-footer .logo {
+footer #omffooter {
   color: white;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 750px) {
+  .logo {
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@import "./esponsive";
+@import "./Sass/Responsive";
 @import "./Sass/Utils/variables";
 @import "./Sass/Utils/mixins";
 @import "./Sass/Layouts/container";
@@ -9,9 +9,10 @@
 body {
     margin: 0;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-a:link {
+a:link, a:visited {
 	text-decoration: none;
     color:black;
 }
@@ -22,9 +23,17 @@ ul {
   }
 
 footer {
-    .logo {
+    #omffooter {
         color: white;
+        font-family: 'Shrikhand', cursive;
+        font-weight: 200;
     }
     color: white;
     background-color: black;
+}
+
+@media only screen and (min-width : 321px) and (max-width : 750px) {
+    .logo {
+        width : 20%;
+    }
 }
