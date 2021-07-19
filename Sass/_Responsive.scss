@@ -1,27 +1,26 @@
-@import "./Sass/Utils/variables";
-@import "./Sass/Utils/mixins";
-@import "./Sass/Layouts/container";
-@import "./Sass/Layouts/header";
-@import "./Sass/Layouts/nav";
-@import "./Sass/Base/typographie";
+@import "./Utils/variables";
+@import "./Utils/mixins";
+@import "./Layouts/container";
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Base/typographie";
 
-@media only screen and (min-width : 321px) and (max-width : 500px) 
-    {
+@media only screen and (min-width : 321px) and (max-width : 750px) {
+    
     body 
     {
         width: 100%;
     }
     
-    .acceuil {
-        .logo 
+    /*.headhome {
+        &__logo 
             {
-            width: 9rem;
+            width: 12rem;
             }
-    }
+    }*/
 
-    .headbar 
-    {
-        display: flex;
+    .fonctions {
+        flex-direction: column;
     }
 
 
