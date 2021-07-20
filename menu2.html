@@ -12,15 +12,17 @@
 <body>
 
 	<header class="headmenu">
-		<div class="headbar">
-			<button><-</button>
-			<img id="logo" src="Actifs/Logo/ohmyfood.png" alt="Nom du restaurant (ohmyfood)">
+		<div class="headmenu__haut">
+			<button class="headmenu__haut--bouton"><a href="index.html"><span class="fas fa-arrow-left"></span></a></button>
+			<img class="headmenu__haut--logo" src="Actifs/Logo/ohmyfood.png" alt="Nom du restaurant (ohmyfood)">
 		</div>
-		<img class="headmenu__img"  src="Actifs/Restaurants/m2lnec.jpg" alt="table avec plats gastronomique">
+		<img class="headmenu__img headmenu__img--taille"  src="Actifs/Restaurants/m2lnec.jpg" alt="table avec plats gastronomique">
 		<h1>La note enchantée</h1> <span class="fas fa-heart"></span>
 	</header>
 
     <div>Entrées</div>
+
+<div class="plats">
 
     <div>
       	<h4>Ravioles de foie gras</h4>
@@ -35,7 +37,7 @@
     </div>
 
     <div>
-      	<h4>Homard et espuma de...</h4>
+      	<h4>Homard et espuma de patate douce</h4>
       	<p>Mariné aux zests d'orange</p>
       	<p>20€</p>
     </div>
@@ -46,7 +48,11 @@
       	<p>35€</p>
     </div>
 
+</div>
+
     <div>Plats</div>
+
+	<div class="plats">
 
     <div>
       	<h4>Noix de coquilles Saint-Jacques</h4>
@@ -66,7 +72,11 @@
       	<p>44€</p>
 	</div>
 
+</div>
+
     <div>Desserts</div>
+
+<div class="plats">
 
     <div>
       	<h4>Macaron noisette et chocolat</h4>
@@ -86,11 +96,13 @@
       	<p>23€</p>
     </div>
 
+</div>
+
     <button>Commander</button>
 
 	<footer>
 
-		<img id="logo" src="Actifs/Logo/ohmyfood.png" alt="Nom du restaurant (ohmyfood)">
+		<h2 id="omffooter">Ohmyfood</h2>
 		
 		<ul >
 			<li><span class="fas fa-utensils"></span> Proposer un restaurant</li>
