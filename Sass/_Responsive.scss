@@ -1,12 +1,13 @@
-@import "./Utils/variables";
-@import "./Utils/mixins";
-@import "./Layouts/container";
-@import "./Layouts/header";
-@import "./Layouts/footer";
-@import "./Base/typographie";
+@import "./Sass/Utils/variables";
+@import "./Sass/Utils/mixins";
+@import "./Sass/Layouts/container";
+@import "./Sass/Layouts/header";
+@import "./Sass/Layouts/footer";
+@import "./Sass/Components/button";
+@import "./Sass/Base/typographie";
 
-@media only screen and (min-width : 321px) and (max-width : 750px) {
-    
+@media only screen and (min-width : 321px) and (max-width : 750px) 
+{
     body 
     {
         width: 100%;
@@ -25,7 +26,9 @@
 
 
     .blocmenu {
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         @include bordrond2;
         &__img {
             @include bordrond;
@@ -37,5 +40,12 @@
             height: 7rem;
           }*/
         }
+    
+    .menu {
+        flex-direction: column;
+    .plats {
+        flex-direction: column;
     }
+    }
+}
       
