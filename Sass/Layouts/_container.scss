@@ -2,19 +2,23 @@
     display: flex;
     &__choix {
         @include bordrond2;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
         padding: 1.2rem;
     }
-    
-    
     flex-wrap: nowrap;
     justify-content: space-evenly;
-}/**/
+}
 
+#fondmenus {
+    background-color: $gris1;
+}
 .blocmenu {
     display: flex;
     flex-direction: column;
     @include bordrond2;
-    margin-left: 0;
     &__img {
         object-fit: cover;
         @include bordrond;
@@ -33,12 +37,15 @@
           right: 50px;*/
           align-self: center;
           margin-right: 1.8rem;
-          color: grey;
+          color: black;
       }
     }
     }
 
-    .plats {
-        @include bordrond2;
+    .menu {
         display: flex;
+    &__plats {
+        @include bordrond2;
+        margin-bottom: 1rem;
         }
+    }
