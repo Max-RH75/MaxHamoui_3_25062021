@@ -1,0 +1,8 @@
+.blocbtn {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    @include btn1;
+}
