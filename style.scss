@@ -4,6 +4,7 @@
 @import "./Sass/Layouts/container";
 @import "./Sass/Layouts/header";
 @import "./Sass/Layouts/footer";
+@import "./Sass/Components/button";
 @import "./Sass/Base/typographie";
 
 body {
@@ -22,18 +23,7 @@ ul {
     padding-left: 0;
   }
 
-footer {
-    #omffooter {
-        color: white;
-        font-family: 'Shrikhand', cursive;
-        font-weight: 200;
-    }
-    color: white;
-    background-color: black;
-}
-
-@media only screen and (min-width : 321px) and (max-width : 750px) {
-    .logo {
-        width : 20%;
-    }
-}
+  #nouv1, #nouv2 {
+    border: 1.5px green solid;
+    width: 4.2rem;
+  }

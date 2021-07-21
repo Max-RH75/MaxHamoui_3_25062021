@@ -1,104 +1,10 @@
+/*@mixin nouv {}*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
-.fonctions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.fonctions__choix {
-  border: 1px black solid;
-  border-radius: 20px;
-  padding: 1.2rem;
-}
-
-/**/
-.blocmenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px black solid;
-  border-radius: 20px;
-  margin-left: 0;
-}
-
-.blocmenu__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 1px black solid;
-  border-radius: 20px 20px 0 0;
-  width: 100%;
-  height: 9.4rem;
-}
-
-.blocmenu__contenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /*&--text{
-        }*/
-}
-
-.blocmenu__contenu__ico {
-  font-size: 1.5rem;
-  /*position: relative;
-          top: 40px;
-          right: 50px;*/
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-right: 1.8rem;
-  color: grey;
-}
-
-.plats {
-  border: 1px black solid;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.headhome {
-  text-align: center;
-}
-
-.headhome__logo {
-  width: 20rem;
-}
-
-.headhome__lieu {
-  color: black;
-  background-color: #F6F6F6;
-}
-
-.headhome__text {
-  background-color: #EAEAEA;
-}
-
-.headmenu__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 9.4rem;
-}
-
 /*CSS rules to specify families
 
 font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
 @media only screen and (min-width: 321px) and (max-width: 750px) {
   body {
     width: 100%;
@@ -116,7 +22,9 @@ font-family: 'Shrikhand', cursive;*/
             flex-direction: column;
   }
   .blocmenu {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px black solid;
     border-radius: 20px;
     /*&__contenu {
@@ -131,8 +39,21 @@ font-family: 'Shrikhand', cursive;*/
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .plats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
+/*@mixin nouv {}*/
 .fonctions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,10 +68,17 @@ font-family: 'Shrikhand', cursive;*/
 .fonctions__choix {
   border: 1px black solid;
   border-radius: 20px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
   padding: 1.2rem;
 }
 
-/**/
+#fondmenus {
+  background-color: #F6F6F6;
+}
+
 .blocmenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +89,6 @@ font-family: 'Shrikhand', cursive;*/
           flex-direction: column;
   border: 1px black solid;
   border-radius: 20px;
-  margin-left: 0;
 }
 
 .blocmenu__img {
@@ -193,15 +120,19 @@ font-family: 'Shrikhand', cursive;*/
       -ms-grid-row-align: center;
       align-self: center;
   margin-right: 1.8rem;
-  color: grey;
+  color: black;
 }
 
-.plats {
-  border: 1px black solid;
-  border-radius: 20px;
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu__plats {
+  border: 1px black solid;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 .headhome {
@@ -210,22 +141,91 @@ font-family: 'Shrikhand', cursive;*/
 
 .headhome__logo {
   width: 20rem;
+  /**/
+}
+
+@media only screen and (min-width: 321px) and (max-width: 750px) {
+  .headhome__logo {
+    width: 12.5rem;
+  }
 }
 
 .headhome__lieu {
   color: black;
-  background-color: #F6F6F6;
+  background-color: #EAEAEA;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.headhome__lieu span {
+  margin-right: 0.5rem;
 }
 
 .headhome__text {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.headmenu__img {
+.headmenu__haut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headmenu__haut--bouton {
+  border: none;
+  background-color: transparent;
+}
+
+.headmenu__haut--logo {
+  width: 12rem;
+  margin: auto;
+}
+
+.headmenu__bas--img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 9.4rem;
+}
+
+.headmenu__bas--bartitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.headmenu__bas--bartitre span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer {
+  color: white;
+  background-color: #353535;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+footer .omffooter {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 200;
+}
+
+.blocbtn {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 0.65rem;
+  border-radius: 30px;
 }
 
 /*CSS rules to specify families
@@ -248,20 +248,8 @@ ul {
   padding-left: 0;
 }
 
-footer {
-  color: white;
-  background-color: black;
-}
-
-footer #omffooter {
-  color: white;
-  font-family: 'Shrikhand', cursive;
-  font-weight: 200;
-}
-
-@media only screen and (min-width: 321px) and (max-width: 750px) {
-  .logo {
-    width: 20%;
-  }
+#nouv1, #nouv2 {
+  border: 1.5px green solid;
+  width: 4.2rem;
 }
 /*# sourceMappingURL=style.css.map */
