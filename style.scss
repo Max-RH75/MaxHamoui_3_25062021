@@ -24,6 +24,5 @@ ul {
   }
 
   #nouv1, #nouv2 {
-    border: 1.5px green solid;
-    width: 4.2rem;
+    @include nouv;
   }

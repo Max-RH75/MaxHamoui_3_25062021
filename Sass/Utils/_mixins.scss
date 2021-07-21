@@ -17,4 +17,7 @@
     border-radius: 30px;
 }
 
-/*@mixin nouv {}*/
+@mixin nouv {
+    border: 1.5px green solid;
+    width: 4.2rem;
+}
