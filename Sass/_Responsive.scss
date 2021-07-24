@@ -22,30 +22,45 @@
 
     .fonctions {
         flex-direction: column;
+        &__choix {
+            max-width: 75%;
+        }
     }
 
-
-    .blocmenu {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        @include bordrond2;
-        &__img {
+    .container {
+        flex-direction: column;
+        position: relative;
+        right: 0.6rem;
+        .blocmenu1, .blocmenu3 {
+            position: relative;
+            right: 0.8rem;
+        }
+        .blocmenu2, .blocmenu4 {
+            position: relative;
+            left: 0.8rem;
+        }
+        .blocmenu {
+            min-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
             @include bordrond;
-            width: 100%;
-            object-fit: cover;
-        }
+            &__img {
+                @include bordrond2;
+                width: 100%;
+                object-fit: cover;
+            }
           /*&__contenu {
-            width: 100%;
-            height: 7rem;
-          }*/
+                width: 100%;
+                height: 7rem;
+            }*/
         }
+    }
     
     .menu {
         flex-direction: column;
-    .plats {
+        .plats {
         flex-direction: column;
-    }
+        }
     }
 }
       
