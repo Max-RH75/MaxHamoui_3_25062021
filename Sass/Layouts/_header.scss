@@ -2,9 +2,9 @@
     text-align: center;
     &__logo {
         width: 20rem;
-        @media only screen and (min-width : 321px) and (max-width : 750px) {
+        @media only screen and (max-width : 750px) {
             width: 12.5rem;
-        }/**/
+        }
     }
     &__lieu {
         color: black;
