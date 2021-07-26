@@ -1,12 +1,18 @@
 @mixin bordrond {
-    border: 1px transparent solid;
-    border-radius: 20px;
+    border: 0 transparent solid;
+    border-radius: 11px;
     box-shadow: 0 0 0.5rem;
 }
 
 @mixin bordrond2{
-    border: 1px transparent solid;
-    border-radius: 20px 20px 0 0;
+    border: 0 transparent solid;
+    border-radius: 11px 11px 0 0;
+}
+
+@mixin fonctbord{
+    border: 0 transparent solid;
+    border-radius: 15px;
+    box-shadow: 0 0 0.8rem;
 }
 
 @mixin underline {
