@@ -1,15 +1,36 @@
 .fonctions {
     display: flex;
-    &__choix {
-        @include bordrond;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1rem;
-        padding: 1.2rem;
-    }
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    &__choix {
+        @include fonctbord;
+        font-size: 82%;
+        font-weight: bold;
+        width: 23rem;
+        @media only screen and (min-width: 750px) and (max-width: 960px) 
+        {margin-left: 0.5rem;
+        margin-right: 0.5rem;}
+        @media only screen and (min-width: 960px)
+        {margin-left: 0.7rem;
+        margin-right: 0.7rem;}
+        margin-bottom: 1rem;
+        padding: 1.2rem;
+        /*width: 80%;*/
+        &__num {
+            @include bordnum;
+            position: relative;
+            right: 1.5rem;
+        }
+        &__textico {
+            margin: auto;
+            span {
+                margin-left: -0.7rem;
+                margin-right: 0.7rem;
+            }
+        }
+    }
 }
 
 #fondmenus {
@@ -28,35 +49,40 @@
         right: 0.8rem;
     }
     .blocmenu {
+        margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
         width: 45%;
-        /*height: 13.3rem;*/
+        height: 13.3rem;
         display: flex;
         flex-direction: column;
         @include bordrond;
         &__img {
             object-fit: cover;
             @include bordrond2;
-            position: relative;
-            right: 2px;
-            bottom: 2px;
             width: 100%;
             height: 9.2rem;
-    }
-    &__contenu {
-        display: flex;
-        justify-content: space-between;
-        /*&--text{
-        }*/
-        &__ico {
-          font-size: 1.5rem;
-          /*position: relative;
-          top: 40px;
-          right: 50px;*/
-          align-self: center;
-          margin-right: 1.8rem;
-          color: black;
+        }
+        &__contenu {
+            display: flex;
+            justify-content: space-between;
+            &--text {
+                margin-left: 0.6rem;
+                line-height: 0;
+                h4 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 13px;
+                font-family: 'roboto', sans-serif;
+                font-weight: 400;
+            }
+        }
+            &--ico {
+                font-size: 1.3rem;
+                align-self: center;
+                margin-right: 1.2rem;
+                color: black;
       }
     }
     }
@@ -64,9 +90,16 @@
 
 .menu {
     display: flex;
-    align-content: center;
+    justify-content: center;
     &__plats {
+        width: 23rem;
         @include bordrond;
+        line-height: 0;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        /*p:last-child {
+            float: right;
+        }*/
         }
 }
