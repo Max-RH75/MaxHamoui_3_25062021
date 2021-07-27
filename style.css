@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 .fonctions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-pack: space-evenly;
@@ -12,15 +14,30 @@
 }
 
 .fonctions__choix {
-  border: 1px transparent solid;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 0.5rem;
-          box-shadow: 0 0 0.5rem;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  border: 0 transparent solid;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 0.8rem;
+          box-shadow: 0 0 0.8rem;
+  width: 15rem;
+  /*width: 80%;*/
   margin-bottom: 1rem;
   padding: 1.2rem;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 960px) {
+  .fonctions__choix {
+    font-size: 78%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.fonctions__choix__num {
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 0.5rem;
+  /*padding-left: 0.5rem;
+    padding-right: 0.5rem;*/
 }
 
 #fondmenus {
@@ -46,10 +63,14 @@
 }
 
 .container .blocmenu {
+  margin-bottom: 0;
+  /*@media only screen and (max-width: 750px)
+        {margin-bottom: 1rem;}*/
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  /*height: 13.3rem;*/
+  height: 13.3rem;
+  /**/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,8 +78,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px transparent solid;
-  border-radius: 20px;
+  border: 0 transparent solid;
+  border-radius: 11px;
   -webkit-box-shadow: 0 0 0.5rem;
           box-shadow: 0 0 0.5rem;
 }
@@ -66,11 +87,8 @@
 .container .blocmenu__img {
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px transparent solid;
-  border-radius: 20px 20px 0 0;
-  position: relative;
-  right: 2px;
-  bottom: 2px;
+  border: 0 transparent solid;
+  border-radius: 11px 11px 0 0;
   width: 100%;
   height: 9.2rem;
 }
@@ -82,20 +100,34 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*&--text{
-        }*/
+  /**/
 }
 
-.container .blocmenu__contenu__ico {
-  font-size: 1.5rem;
-  /*position: relative;
-          top: 40px;
-          right: 50px;*/
+.container .blocmenu__contenu--text {
+  margin-left: 0.6rem;
+  line-height: 0;
+}
+
+.container .blocmenu__contenu--text h4 {
+  font-size: 14px;
+}
+
+.container .blocmenu__contenu--text p {
+  font-size: 13px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container .blocmenu__contenu--ico {
+  font-size: 1.3rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 1.8rem;
+  margin-right: 1.2rem;
   color: black;
+  /*position: relative;
+          top: 40px;
+          right: 50px;*/
 }
 
 .menu {
@@ -107,11 +139,17 @@
 }
 
 .menu__plats {
-  border: 1px transparent solid;
-  border-radius: 20px;
+  border: 0 transparent solid;
+  border-radius: 11px;
   -webkit-box-shadow: 0 0 0.5rem;
           box-shadow: 0 0 0.5rem;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*p:last-child {
             float: right;
         }*/
@@ -123,10 +161,9 @@
 
 .headhome__logo {
   width: 20rem;
-  /**/
 }
 
-@media only screen and (min-width: 321px) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .headhome__logo {
     width: 12.5rem;
   }
@@ -190,6 +227,7 @@
 }
 
 footer {
+  margin-top: 1rem;
   color: white;
   background-color: #353535;
   padding-top: 0.5rem;
@@ -217,7 +255,7 @@ footer .omffooter {
 
 font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive;*/
-@media only screen and (min-width: 321px) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   body {
     width: 100%;
   }
@@ -235,6 +273,8 @@ font-family: 'Shrikhand', cursive;*/
   }
   .fonctions__choix {
     max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container {
     -webkit-box-orient: vertical;
@@ -242,7 +282,7 @@ font-family: 'Shrikhand', cursive;*/
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    right: 0.6rem;
+    right: 0.83rem;
   }
   .container .blocmenu1, .container .blocmenu3 {
     position: relative;
@@ -253,11 +293,11 @@ font-family: 'Shrikhand', cursive;*/
     left: 0.8rem;
   }
   .container .blocmenu {
-    min-width: 85%;
+    min-width: 89.60%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px transparent solid;
-    border-radius: 20px;
+    border: 0 transparent solid;
+    border-radius: 11px;
     -webkit-box-shadow: 0 0 0.5rem;
             box-shadow: 0 0 0.5rem;
     /*&__contenu {
@@ -266,11 +306,17 @@ font-family: 'Shrikhand', cursive;*/
             }*/
   }
   .container .blocmenu__img {
-    border: 1px transparent solid;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+    width: 100%;
+    height: 9.2rem;
+  }
+  .container .blocmenu__img--position {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
   }
   .menu {
     -webkit-box-orient: vertical;
@@ -286,10 +332,23 @@ font-family: 'Shrikhand', cursive;*/
   }
 }
 
+@media only screen and (min-width: 430px) and (max-width: 750px) {
+  .container .blocmenu__img {
+    -o-object-position: 50% 65%;
+       object-position: 50% 65%;
+  }
+  .container .blocmenu__img--position {
+    -o-object-position: 50% 55%;
+       object-position: 50% 55%;
+  }
+}
+
 .fonctions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-pack: space-evenly;
@@ -298,15 +357,30 @@ font-family: 'Shrikhand', cursive;*/
 }
 
 .fonctions__choix {
-  border: 1px transparent solid;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 0.5rem;
-          box-shadow: 0 0 0.5rem;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  border: 0 transparent solid;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 0.8rem;
+          box-shadow: 0 0 0.8rem;
+  width: 15rem;
+  /*width: 80%;*/
   margin-bottom: 1rem;
   padding: 1.2rem;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 960px) {
+  .fonctions__choix {
+    font-size: 78%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.fonctions__choix__num {
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 0.5rem;
+  /*padding-left: 0.5rem;
+    padding-right: 0.5rem;*/
 }
 
 #fondmenus {
@@ -332,10 +406,14 @@ font-family: 'Shrikhand', cursive;*/
 }
 
 .container .blocmenu {
+  margin-bottom: 0;
+  /*@media only screen and (max-width: 750px)
+        {margin-bottom: 1rem;}*/
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  /*height: 13.3rem;*/
+  height: 13.3rem;
+  /**/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,8 +421,8 @@ font-family: 'Shrikhand', cursive;*/
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px transparent solid;
-  border-radius: 20px;
+  border: 0 transparent solid;
+  border-radius: 11px;
   -webkit-box-shadow: 0 0 0.5rem;
           box-shadow: 0 0 0.5rem;
 }
@@ -352,11 +430,8 @@ font-family: 'Shrikhand', cursive;*/
 .container .blocmenu__img {
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px transparent solid;
-  border-radius: 20px 20px 0 0;
-  position: relative;
-  right: 2px;
-  bottom: 2px;
+  border: 0 transparent solid;
+  border-radius: 11px 11px 0 0;
   width: 100%;
   height: 9.2rem;
 }
@@ -368,20 +443,34 @@ font-family: 'Shrikhand', cursive;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*&--text{
-        }*/
+  /**/
 }
 
-.container .blocmenu__contenu__ico {
-  font-size: 1.5rem;
-  /*position: relative;
-          top: 40px;
-          right: 50px;*/
+.container .blocmenu__contenu--text {
+  margin-left: 0.6rem;
+  line-height: 0;
+}
+
+.container .blocmenu__contenu--text h4 {
+  font-size: 14px;
+}
+
+.container .blocmenu__contenu--text p {
+  font-size: 13px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container .blocmenu__contenu--ico {
+  font-size: 1.3rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 1.8rem;
+  margin-right: 1.2rem;
   color: black;
+  /*position: relative;
+          top: 40px;
+          right: 50px;*/
 }
 
 .menu {
@@ -393,11 +482,17 @@ font-family: 'Shrikhand', cursive;*/
 }
 
 .menu__plats {
-  border: 1px transparent solid;
-  border-radius: 20px;
+  border: 0 transparent solid;
+  border-radius: 11px;
   -webkit-box-shadow: 0 0 0.5rem;
           box-shadow: 0 0 0.5rem;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*p:last-child {
             float: right;
         }*/
@@ -409,10 +504,9 @@ font-family: 'Shrikhand', cursive;*/
 
 .headhome__logo {
   width: 20rem;
-  /**/
 }
 
-@media only screen and (min-width: 321px) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .headhome__logo {
     width: 12.5rem;
   }
@@ -476,6 +570,7 @@ font-family: 'Shrikhand', cursive;*/
 }
 
 footer {
+  margin-top: 1rem;
   color: white;
   background-color: #353535;
   padding-top: 0.5rem;
