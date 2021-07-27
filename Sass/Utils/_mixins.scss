@@ -11,16 +11,19 @@
 
 @mixin fonctbord{
     border: 0 transparent solid;
-    border-radius: 15px;
+    border-radius: 17px;
     box-shadow: 0 0 0.8rem;
 }
 
 @mixin bordnum {
+    font-weight: normal;
+    font-size: 75%;
+    color: white;
     background-color: $couleur-primaire;
     border-radius: 50%;
     padding: 0.5rem;
-    /*padding-left: 0.5rem;
-    padding-right: 0.5rem;*/
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
 }
 
 @mixin underline {
