@@ -1,4 +1,5 @@
 @import "./Sass/Responsive";
+@import "./Sass/Pages/acceuil";
 @import "./Sass/Utils/variables";
 @import "./Sass/Utils/mixins";
 @import "./Sass/Layouts/container";
@@ -8,21 +9,52 @@
 @import "./Sass/Base/typographie";
 
 body {
-    margin: 0;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:link, a:visited {
 	text-decoration: none;
-    color: inherit;
+  color: inherit;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+  list-style-type: none;
+  padding-left: 0;
+}
 
-  #nouv1, #nouv2 {
-    @include nouv;
+.nomplat {
+  @include underline;
+}
+
+.fa-heart::before {
+    transition: color 0.50s;
+}
+.fa-heart:hover::before {
+    color: $couleur-primaire;
+    cursor: pointer;
+}
+
+.menu__plats--1 {
+  animation:fadein 1s;
+  /*transition-property: opacity;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;*/
+}
+
+.menu__plats--2 {
+  animation:fadein 2s;
+  /*transition-property: opacity;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;*/
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
