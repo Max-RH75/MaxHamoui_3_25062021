@@ -1,5 +1,6 @@
 @import "./Sass/Responsive";
 @import "./Sass/Pages/acceuil";
+@import "./Sass/Pages/La\ note\ enchantée";
 @import "./Sass/Utils/variables";
 @import "./Sass/Utils/mixins";
 @import "./Sass/Layouts/container";
@@ -36,20 +37,6 @@ ul {
     cursor: pointer;
 }
 
-.menu__plats--1 {
-  animation:fadein 1s;
-  /*transition-property: opacity;
-  transition-duration: 1.5s;
-  transition-delay: 0.5s;*/
-}
-
-.menu__plats--2 {
-  animation:fadein 2s;
-  /*transition-property: opacity;
-  transition-duration: 1.5s;
-  transition-delay: 0.5s;*/
-}
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -57,4 +44,48 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+.menu__plats--1 {
+  animation:fadein 2s;
+}
+
+.menu__plats--2 {
+  animation:fadein 2s;
+  animation-delay: 0.5s;
+}
+
+.menu__plats--3 {
+  animation:fadein 2s;
+  animation-delay: 1s;
+}
+
+.menu__plats--4 {
+  animation:fadein 2s;
+  animation-delay: 1.5s;
+}
+
+.menu__plats--5 {
+  animation:fadein 2s;
+  animation-delay: 2s;
+}
+
+.menu__plats--6 {
+  animation:fadein 2s;
+  animation-delay: 2.5s;
+}
+
+.menu__plats--7 {
+  animation:fadein 2s;
+  animation-delay: 3s;
+}
+
+.menu__plats--8 {
+  animation:fadein 2s;
+  animation-delay: 3.5s;
+}
+
+.menu__plats--9 {
+  animation:fadein 2s;
+  animation-delay: 4s;
 }
