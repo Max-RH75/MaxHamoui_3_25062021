@@ -30,7 +30,9 @@ ul {
 }
 
 .fa-heart::before {
-    transition: color 0.50s;
+  content: ".fa-heart";
+    transition: 0.5s;
+    background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire) 0.50s;
 }
 .fa-heart:hover::before {
     color: $couleur-primaire;
