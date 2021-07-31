@@ -27,12 +27,19 @@
 }
 
 @mixin underline {
-    border-bottom: 3px solid $couleur-tertiaire;
+    border-bottom: 4px solid $couleur-tertiaire;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 @mixin btn1 {
+    box-shadow: 0 0 0.5rem rgb(172, 172, 172);
+    color: white;
+    border: none;
     padding : 0.65rem;
     border-radius: 30px;
+    background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
 }
 
 @mixin nouv {
