@@ -68,50 +68,33 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.container .blocmenu1, .container .blocmenu3 {
-  position: relative;
-  left: 0.8rem;
-}
-
-@media only screen and (min-width: 1040px) {
-  .container .blocmenu1, .container .blocmenu3 {
-    position: relative;
-    left: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container .blocmenu1, .container .blocmenu3 {
-    position: relative;
-    left: 1.4rem;
-  }
-}
-
-.container .blocmenu2, .container .blocmenu4 {
-  position: relative;
-  right: 0.8rem;
-}
-
-@media only screen and (min-width: 1040px) {
-  .container .blocmenu2, .container .blocmenu4 {
-    position: relative;
-    right: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container .blocmenu2, .container .blocmenu4 {
-    position: relative;
-    right: 1.4rem;
-  }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100rem;
+  max-width: 100%;
+  /*.blocmenu1, .blocmenu3 {
+        }
+        @media only screen and (min-width:1040px) 
+        {position: relative;
+        left: 1.2rem;}
+        @media only screen and (min-width:1280px) 
+        {position: relative;
+        left: 1.4rem;}
+    }*/
+  /*.blocmenu2, .blocmenu4 {
+        }
+        @media only screen and (min-width:1040px) 
+        {position: relative;
+        right: 1.2rem;}
+        @media only screen and (min-width:1280px) 
+        {position: relative;
+        right: 1.4rem;}
+    }*/
 }
 
 .container .blocmenu {
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 45%;
   height: 13.3rem;
   display: -webkit-box;
@@ -373,12 +356,18 @@ font-family: 'Shrikhand', cursive;*/
     right: 0.83rem;
   }
   .container .blocmenu1, .container .blocmenu3 {
-    position: relative;
-    right: 0.8rem;
+    margin-left: 2rem;
+    /*position: relative;
+            right: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;*/
   }
   .container .blocmenu2, .container .blocmenu4 {
-    position: relative;
-    left: 0.8rem;
+    margin-right: 2rem;
+    /*position: relative;
+            left: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;*/
   }
   .container .blocmenu {
     min-width: 89.60%;
@@ -511,50 +500,33 @@ font-family: 'Shrikhand', cursive;*/
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.container .blocmenu1, .container .blocmenu3 {
-  position: relative;
-  left: 0.8rem;
-}
-
-@media only screen and (min-width: 1040px) {
-  .container .blocmenu1, .container .blocmenu3 {
-    position: relative;
-    left: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container .blocmenu1, .container .blocmenu3 {
-    position: relative;
-    left: 1.4rem;
-  }
-}
-
-.container .blocmenu2, .container .blocmenu4 {
-  position: relative;
-  right: 0.8rem;
-}
-
-@media only screen and (min-width: 1040px) {
-  .container .blocmenu2, .container .blocmenu4 {
-    position: relative;
-    right: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .container .blocmenu2, .container .blocmenu4 {
-    position: relative;
-    right: 1.4rem;
-  }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100rem;
+  max-width: 100%;
+  /*.blocmenu1, .blocmenu3 {
+        }
+        @media only screen and (min-width:1040px) 
+        {position: relative;
+        left: 1.2rem;}
+        @media only screen and (min-width:1280px) 
+        {position: relative;
+        left: 1.4rem;}
+    }*/
+  /*.blocmenu2, .blocmenu4 {
+        }
+        @media only screen and (min-width:1040px) 
+        {position: relative;
+        right: 1.2rem;}
+        @media only screen and (min-width:1280px) 
+        {position: relative;
+        right: 1.4rem;}
+    }*/
 }
 
 .container .blocmenu {
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 45%;
   height: 13.3rem;
   display: -webkit-box;
@@ -808,8 +780,11 @@ ul {
 }
 
 .fa-heart::before {
-  -webkit-transition: color 0.50s;
-  transition: color 0.50s;
+  content: ".fa-heart";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA)) 0.5s;
+  background: linear-gradient(360deg, #9356DC, #FF79DA) 0.5s;
 }
 
 .fa-heart:hover::before {
@@ -836,63 +811,52 @@ ul {
 }
 
 .menu__plats--1 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 .menu__plats--2 {
   -webkit-animation: fadein 2s;
           animation: fadein 2s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 
 .menu__plats--3 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 .menu__plats--4 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
 }
 
 .menu__plats--5 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s;
 }
 
 .menu__plats--6 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
 }
 
 .menu__plats--7 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation: fadein 7s;
+          animation: fadein 7s;
 }
 
 .menu__plats--8 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation: fadein 8s;
+          animation: fadein 8s;
 }
 
 .menu__plats--9 {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation: fadein 9s;
+          animation: fadein 9s;
+}
+
+.menu__plats--10 {
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
 }
 /*# sourceMappingURL=style.css.map */
