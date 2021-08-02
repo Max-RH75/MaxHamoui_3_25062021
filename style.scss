@@ -29,61 +29,112 @@ ul {
   @include underline;
 }
 
-.fa-heart::before {
-  content: ".fa-heart";
-    transition: 0.5s;
-    background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire) 0.50s;
-}
-.fa-heart:hover::before {
+/*.icon-heart:before {
+  content: "\e901";
+  transition: 0.5s;
+  background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire) 0.50s;
+}*/
+
+.fa-heart:hover {
     color: $couleur-primaire;
     cursor: pointer;
 }
 
-@keyframes fadein {
+.chargement {
+  border-bottom : 10px solid $couleur-primaire;
+  border-top: 10px solid $couleur-secondaire;
+  border-left: 10px solid $couleur-tertiaire;
+  border-right: 10px solid $couleur-tertiaire;
+  border-radius: 50%;
+
+  width: 8rem;
+  height: 8rem;
+  animation: spin 1.5s ease-in-out infinite, fadeout 1s ease-out 3s;
+  animation-fill-mode: both;
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity : 0;
+  }
+}
+
+/*@keyframes fadein {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}*/
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px $couleur-tertiaire;
+  }
+}
+
+@keyframes spin{
+  0%{
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .menu__plats--1 {
   animation:fadein 1s;
+
 }
 
 .menu__plats--2 {
-  animation:fadein 2s;
+  animation:fadein 1s;
 }
 
 .menu__plats--3 {
-  animation:fadein 3s;
+  animation:fadein 1s;
 }
 
 .menu__plats--4 {
-  animation:fadein 4s;
+  animation:fadein 1s;
 }
 
 .menu__plats--5 {
-  animation:fadein 5s;
+  animation:fadein 1s;
 }
 
 .menu__plats--6 {
-  animation:fadein 6s;
+  animation:fadein 1s;
 }
 
 .menu__plats--7 {
-  animation:fadein 7s;
+  animation:fadein 1s;
 }
 
 .menu__plats--8 {
-  animation:fadein 8s;
+  animation:fadein 1s;
 }
 
 .menu__plats--9 {
-  animation:fadein 9s;
+  animation:fadein 1s;
 }
 
 .menu__plats--10 {
-  animation: fadein 10s;
+  animation: fadein 1s;
 }
