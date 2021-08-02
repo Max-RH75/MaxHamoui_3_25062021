@@ -36,23 +36,33 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    
     .blocmenu1, .blocmenu3 {
-        position: relative;
-        left: 0.8rem;
+        margin-left: auto;
+        margin-right: 1rem;
+        @media only screen and (max-width: 750px) 
+        {margin-right: auto;}
+        /*@media only screen and (min-width:1280px) 
+        {position: relative;
+        left: 1.4rem;}*/
     }
     .blocmenu2, .blocmenu4 {
-        position: relative;
-        right: 0.8rem;
-    }
-    .blocmenu {
-        /*@media only screen and (min-width:1040px) {
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-        }*/
-        margin-bottom: 0;
-        margin-left: auto;
+        margin-left: 1rem;
         margin-right: auto;
-        width: 45%;
+        @media only screen and (max-width:750px) 
+        {margin-left: auto;}
+        /*@media only screen and (min-width:1280px) 
+        {position: relative;
+        right: 1.4rem;}*/
+    }
+
+    .blocmenu {
+        flex-basis: 40%;
+        margin-bottom: 0;
+        @media only screen and (min-width:1280px) 
+        {margin-bottom: 0.3rem;}
+        width: 50%;
         height: 13.3rem;
         display: flex;
         flex-direction: column;
