@@ -18,6 +18,10 @@
         margin-bottom: 1rem;
         padding: 1.2rem;
         /*width: 80%;*/
+        &:hover{
+            cursor: pointer;
+            background-color: $couleur-fonction;
+        }
         &__num {
             @include bordnum;
             position: relative;
@@ -107,6 +111,9 @@
         align-items: center;
     }
     &__plats {
+        p:last-child {
+            align-self: flex-end;
+        }
         @media only screen and (min-width: 750px) and (max-width: 1053px) {
         width: 40rem;
     }
@@ -118,8 +125,5 @@
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
-        /*p:last-child {
-            float: right;
-        }*/
         }
 }
