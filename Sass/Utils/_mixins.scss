@@ -27,10 +27,17 @@
 }
 
 @mixin underline {
+    font-weight: 300;
+    text-transform: uppercase;
     border-bottom: 4px solid $couleur-tertiaire;
     width: 2rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    @media only screen and (min-width: 750px) {
+        text-align: center;
+        width: 4rem;
+    }
 }
 
 @mixin btn1 {
@@ -40,6 +47,9 @@
     padding : 0.65rem;
     border-radius: 30px;
     background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @mixin nouv {
