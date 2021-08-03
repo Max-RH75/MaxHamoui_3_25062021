@@ -27,6 +27,10 @@ ul {
 
 .nomplat {
   @include underline;
+  @media only screen and (min-width: 750px)  {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*.icon-heart:before {
@@ -39,29 +43,45 @@ ul {
     color: $couleur-primaire;
     cursor: pointer;
 }
-
-.chargement {
-  border-bottom : 10px solid $couleur-primaire;
-  border-top: 10px solid $couleur-secondaire;
-  border-left: 10px solid $couleur-tertiaire;
-  border-right: 10px solid $couleur-tertiaire;
-  border-radius: 50%;
-
-  width: 8rem;
-  height: 8rem;
-  animation: spin 1.5s ease-in-out infinite, fadeout 1s ease-out 3s;
-  animation-fill-mode: both;
-  margin: auto;
+#chargementbg {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0;
+  background-color: $couleur-tertiaire;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  animation: fadeout 1s ease 2s both;
+  #chargementbo {
+    font-size: 22px;
+    border-bottom : 10px solid $couleur-primaire;
+    border-top: 10px solid $couleur-secondaire;
+    border-left: 10px solid black/*$couleur-tertiaire*/;
+    border-right: 10px solid black/*$couleur-tertiaire*/;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1.5s ease-in-out infinite, fadeout 1s ease 2s;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    }
+  #chargementomf {
+    animation: fadeout 1s ease 2s;
+    width: 8rem;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+}
+
+body {
+  z-index: 1;
 }
 
 @keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
+  to {
     opacity : 0;
+    z-index: -1000;
   }
 }
 
@@ -89,6 +109,8 @@ ul {
   }
 }
 
+
+
 @keyframes fadein {
   0% {
     transform: scale(0);
@@ -100,7 +122,6 @@ ul {
 
 .menu__plats--1 {
   animation:fadein 1s;
-
 }
 
 .menu__plats--2 {
