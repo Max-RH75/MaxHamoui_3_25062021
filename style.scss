@@ -42,7 +42,9 @@ ul {
 .fa-heart:hover {
     color: $couleur-primaire;
     cursor: pointer;
+    pointer-events: all;
 }
+
 #chargementbg {
   position: fixed;
   margin: 0;
@@ -55,8 +57,8 @@ ul {
     font-size: 22px;
     border-bottom : 10px solid $couleur-primaire;
     border-top: 10px solid $couleur-secondaire;
-    border-left: 10px solid black/*$couleur-tertiaire*/;
-    border-right: 10px solid black/*$couleur-tertiaire*/;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
