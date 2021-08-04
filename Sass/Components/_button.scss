@@ -1,8 +1,15 @@
 .blocbtn {
     text-align: center;
     margin-bottom: 1rem;
+    .btn {
+        padding: 0.75rem 2.3rem 0.75rem 2.3rem;
+    }
 }
 
 .btn {
     @include btn1;
+    &:hover {
+        background: linear-gradient(#ff93e1, #a16be0);
+        box-shadow: 0px 2px 10px #929191;
+        }
 }
