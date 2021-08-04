@@ -9,6 +9,52 @@ footer {
         color: white;
         font-family: 'Shrikhand', cursive;
         font-weight: 200;
-        
+        /*position: relative;
+        left: 1rem;*/
     }
 }
+
+@media only screen and (min-width: 750px) {
+
+    .omffooter {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .grillef {
+        display: grid;
+        grid-template-areas: 20% 20% 20% 20% 20% / 20% 20% 20% 20% 20%;
+        &__pr {
+        grid-column: 2;
+        }
+	    &__dp {
+        grid-column: 3;
+        }
+        &__ml {
+        grid-column: 4;
+        }
+        &__c {
+        grid-column: 5;
+    }
+}
+}
+    /*@media only screen and (max-width: 750px) {
+        .grillef {
+            position: relative;
+            right: 5rem;
+            &__pr {
+                grid-area : 1 / 1 / 2 / 2;
+            }
+            &__dp {
+                grid-area : 2 / 1 / 3 / 2;
+            }
+            &__ml {
+                grid-area : 3 / 1 / 4 / 2;
+            }
+            &__c {
+                grid-area : 4 / 1 / 5 / 2;
+            }
+        }
+    }*/
