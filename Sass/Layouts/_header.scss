@@ -1,11 +1,18 @@
 .headhome {
     text-align: center;
-    &__logo {
+    &__bloc {
+        box-shadow: 0 0 0.5rem rgb(155, 155, 155);
+        position: relative;
+        z-index: 100;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        &--logo {
         width: 20rem;
         @media only screen and (max-width : 750px) {
-            width: 12.5rem;
+        width: 12.5rem;
         }
     }
+}
     &__lieu {
         color: black;
         background-color: $gris2;
@@ -41,12 +48,22 @@
     &--img {
         object-fit: cover;
         width: 100%;
-        height: 9.4rem;
+        height: 28rem;
+        /*height: 9.4rem;*/
     }
     &--bartitre {
+        font-size: 12px;
+        font-family: 'shrikhand';
+        background-color: $gris1;
+        position: relative;
+        z-index: 100;
+        margin-top: -2rem;
+        border: solid transparent;
+        border-radius: 35px 35px 0 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         span {
+            font-size: 24px;
             align-self: center;
         }
     }

@@ -45,6 +45,22 @@ ul {
     pointer-events: all;
 }
 
+.fa-heart {
+  color: #FFF;
+  background-clip: text;
+  border-radius: 50%;
+  padding:.2em;
+}
+.fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+  color: $couleur-primaire;
+  cursor: pointer;
+}
+
 #chargementbg {
   position: fixed;
   margin: 0;

@@ -24,8 +24,9 @@
 
     .fonctions {
         flex-direction: column;
+        align-content: center;
         &__choix {
-            max-width: 75%;
+            max-width: 80%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -33,21 +34,18 @@
 
     .container {
         flex-direction: column;
-        /*position: relative;
-        right: 0.83rem;*/
         .blocmenu1, .blocmenu3 {
             margin-right: auto;
-            /*margin-left: auto;*/
             
         }
         .blocmenu2, .blocmenu4 {
             margin-left: auto;
-            /*margin-right: auto;*/
         }
         .blocmenu {
             min-width: 89.60%;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 2rem;
             @include bordrond;
             &__img {
                 width: 100%;

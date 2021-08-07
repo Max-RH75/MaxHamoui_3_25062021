@@ -1,5 +1,16 @@
 
 .menu__plats--10 {
-    animation:fadein 2s;
-    animation-delay: 4.5s;
-  }
+  animation:fadein 2s;
+  animation-delay: 4.5s;
+}
+
+@media only screen and (min-width: 1053px) {
+
+.menu--lne {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;
+  align-content: center;
+  flex-direction: row;*/
+}
+}

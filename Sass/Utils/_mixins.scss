@@ -12,7 +12,7 @@
 @mixin fonctbord{
     border: 0 transparent solid;
     border-radius: 17px;
-    box-shadow: 0 0 0.8rem;
+    box-shadow: 0 2px 0.6rem rgb(175, 175, 175);
 }
 
 @mixin bordnum {
@@ -27,7 +27,7 @@
 }
 
 @mixin underline {
-    font-weight: 300;
+    font-weight: 3A00;
     text-transform: uppercase;
     border-bottom: 4px solid $couleur-tertiaire;
     width: 2rem;
@@ -36,7 +36,7 @@
     margin-left: 1rem;
     @media only screen and (min-width: 750px) {
         text-align: center;
-        width: 4rem;
+        width: 5rem;
     }
 }
 
@@ -44,9 +44,9 @@
     box-shadow: 0 0 0.5rem rgb(172, 172, 172);
     color: white;
     border: none;
-    padding : 0.65rem;
+    padding : 0.75rem;
     border-radius: 30px;
-    background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
+    background: linear-gradient(354deg, $couleur-primaire, $couleur-secondaire);
     &:hover {
         cursor: pointer;
     }

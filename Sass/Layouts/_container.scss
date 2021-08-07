@@ -2,37 +2,48 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    &__choix {
-        @include fonctbord;
-        font-size: 82%;
-        font-weight: bold;
-        width: 23rem;
-        @media only screen and (min-width: 750px) and (max-width: 960px) 
-        {margin-left: 0.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    @media only screen and (max-width: 810px) 
+        {flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 0.5rem;
         margin-right: 0.5rem;}
-        @media only screen and (min-width: 960px)
-        {margin-left: 0.7rem;
-        margin-right: 0.7rem;}
-        margin-bottom: 1rem;
-        padding: 1.2rem;
-        /*width: 80%;*/
-        &:hover{
-            cursor: pointer;
-            background-color: $couleur-fonction;
-        }
-        &__num {
-            @include bordnum;
-            position: relative;
-            right: 1.5rem;
-        }
-        &__textico {
-            margin: auto;
-            span {
-                margin-left: -0.7rem;
-                margin-right: 0.7rem;
+        &__choix {
+            @include fonctbord;
+            font-size: 82%;
+            font-weight: bold;
+            width: 60%;
+            @media only screen and (min-width: 810px)
+            {margin-left: 1rem;
+            margin-right: 1rem;}
+            margin-bottom: 1rem;
+            padding: 1.2rem;
+            &:hover{
+                cursor: pointer;
+                background-color: $couleur-fonction;
+                color: $couleur-primaire;
             }
+            &__num {
+                @include bordnum;
+                position: relative;
+                right: 2rem;
+            }
+            &__textico {
+                text-align: center;
+                &--mobile {
+                    margin-left: -0.7rem;
+                    margin-right: 0.7rem;
+                }
+                &--list {
+                    margin-left: -0.7rem;
+                    margin-right: 0.7rem;
+                }
+                &--store {
+                    margin-left: -0.7rem;
+                    margin-right: 0.7rem;
+                }
         }
     }
 }
@@ -47,29 +58,24 @@
         margin-right: 1rem;
         @media only screen and (max-width: 750px) 
         {margin-right: auto;}
-        /*@media only screen and (min-width:1280px) 
-        {position: relative;
-        left: 1.4rem;}*/
     }
     .blocmenu2, .blocmenu4 {
         margin-left: 1rem;
         margin-right: auto;
         @media only screen and (max-width:750px) 
         {margin-left: auto;}
-        /*@media only screen and (min-width:1280px) 
-        {position: relative;
-        right: 1.4rem;}*/
     }
 
     .blocmenu {
-        flex-basis: 40%;
-        margin-bottom: 0;
-        @media only screen and (min-width:1280px) 
-        {margin-bottom: 0.3rem;}
         width: 50%;
         height: 13.3rem;
         display: flex;
         flex-direction: column;
+        flex-basis: 40%;
+        margin-bottom: 0.1rem;
+        @media only screen and (min-width:750px) 
+        {margin-bottom: 0.7rem;}
+        
         @include bordrond;
         &__img {
             object-fit: cover;
@@ -102,28 +108,46 @@
     }
 }
 
+.bgmenus {
+    background-color: $gris1;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: -1.5rem;
+}
+
 .menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     @media only screen and (min-width: 750px) and (max-width: 1053px) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &__plats {
-        p:last-child {
-            align-self: flex-end;
-        }
-        @media only screen and (min-width: 750px) and (max-width: 1053px) {
-        width: 40rem;
-    }
         margin-right: 1rem;
         margin-left: 1rem;
-        width: 23rem;
+        /*width: 23rem;*/
+        width: 80%;
         @include bordrond;
         line-height: 0;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
+        &__hp h4 {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+        &__prix {
+            align-self: flex-end;
+        }
+        &__selection {
+            width: 0%;
+        }
+        @media only screen and (min-width: 750px) and (max-width: 1053px) {
+        width: 40rem;
+        }
+    }
 }
