@@ -20,11 +20,6 @@ a:link, a:visited {
   color: inherit;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 .nomplat {
   @include underline;
   @media only screen and (min-width: 750px)  {
@@ -61,7 +56,7 @@ ul {
   cursor: pointer;
 }
 
-#chargementbg {
+/*#chargementbg {
   position: fixed;
   margin: 0;
   background-color: $couleur-tertiaire;
@@ -90,7 +85,7 @@ ul {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
   }
-}
+}*/
 
 body {
   z-index: 1;
