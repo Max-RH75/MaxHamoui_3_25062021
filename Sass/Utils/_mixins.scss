@@ -4,12 +4,17 @@
     box-shadow: 0 0 0.5rem;
 }
 
-@mixin bordrond2{
+@mixin bordrond2 {
     border: 0 transparent solid;
     border-radius: 11px 11px 0 0;
 }
 
-@mixin fonctbord{
+@mixin fonctbord {
+    vertical-align: text-top;
+    height: 1.5rem;
+    font-size: 82%;
+    font-weight: bold;
+    width: 60%;
     border: 0 transparent solid;
     border-radius: 17px;
     box-shadow: 0 2px 0.6rem rgb(175, 175, 175);
@@ -27,7 +32,7 @@
 }
 
 @mixin underline {
-    font-weight: 3A00;
+    font-weight: 300;
     text-transform: uppercase;
     border-bottom: 4px solid $couleur-tertiaire;
     width: 2rem;
@@ -53,6 +58,19 @@
 }
 
 @mixin nouv {
-    border: 1.5px green solid;
+    position: absolute;
+    right: 0.6rem; bottom: 9.7rem;
+    color: $couleur-nouv;
+    background-color: $couleur-tertiaire;
+    border: 1.5px $couleur-nouv;
     width: 4.2rem;
+    border-radius: 2px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    @media only screen and (min-width:750px) {
+        bottom: 10.5rem;
+    }
 }
