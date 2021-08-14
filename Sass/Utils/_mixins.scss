@@ -9,26 +9,41 @@
     border-radius: 11px 11px 0 0;
 }
 
+@mixin bordrond3 {
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.143);
+    border-radius: 15px;
+    width: 92%;
+    height: 3.5rem;
+}
+
 @mixin fonctbord {
     vertical-align: text-top;
     height: 1.5rem;
     font-size: 82%;
     font-weight: bold;
-    width: 60%;
+    width: 75%;
     border: 0 transparent solid;
     border-radius: 17px;
     box-shadow: 0 2px 0.6rem rgb(175, 175, 175);
+    @media only screen and (min-width: 985px) {
+        width: 22%;
+    }
+    @media only screen and (min-width: 810px) and (max-width: 985px) {
+        width: 25%;
+    }
 }
 
 @mixin bordnum {
+    position: relative;
+    right: 1.8rem;
     font-weight: normal;
     font-size: 75%;
     color: white;
     background-color: $couleur-primaire;
     border-radius: 50%;
-    padding: 0.5rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding: 0.25rem;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
 }
 
 @mixin underline {
@@ -46,6 +61,8 @@
 }
 
 @mixin btn1 {
+    font-size: 13px;
+    font-weight: 500;
     box-shadow: 0 0 0.5rem rgb(172, 172, 172);
     color: white;
     border: none;
