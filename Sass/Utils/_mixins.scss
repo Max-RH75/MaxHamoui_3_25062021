@@ -1,3 +1,5 @@
+@import "../Utils/variables";
+
 @mixin bordrond {
     border: 0 transparent solid;
     border-radius: 11px;
@@ -18,13 +20,17 @@
 
 @mixin fonctbord {
     vertical-align: text-top;
-    height: 1.5rem;
+    height: 1.4rem;
     font-size: 82%;
     font-weight: bold;
-    width: 75%;
+    width: 78%;
     border: 0 transparent solid;
     border-radius: 17px;
     box-shadow: 0 2px 0.6rem rgb(175, 175, 175);
+    @media only screen and (max-width: 520px) {
+        position: relative; left: 0.3rem;
+        width: 77%;
+    }
     @media only screen and (min-width: 985px) {
         width: 22%;
     }
@@ -76,7 +82,7 @@
 
 @mixin nouv {
     position: absolute;
-    right: 0.6rem; bottom: 9.7rem;
+    right: 0.6rem; bottom: 10rem;
     color: $couleur-nouv;
     background-color: $couleur-tertiaire;
     border: 1.5px $couleur-nouv;
@@ -88,6 +94,6 @@
     padding-top: 7px;
     padding-bottom: 5px;
     @media only screen and (min-width:750px) {
-        bottom: 10.5rem;
+        bottom: 13.15rem;
     }
 }
