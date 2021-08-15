@@ -9,62 +9,120 @@
         &--logo {
         width: 20rem;
         @media only screen and (max-width : 750px) {
-        width: 12.5rem;
+            width: 9rem;
+        }
         }
     }
-}
     &__lieu {
+        font-size: 13px;
+        font-weight: 500;
         color: black;
         background-color: $gris2;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media only screen and (min-width : 750px) {
+            font-size: 16px;
+         }
         span {
-            margin-right: 0.5rem;
+            margin-right: 0.8rem;
         }
     }
     &__text {
-            background-color: $gris1;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+        background-color: $gris1;
+        padding-top: 1rem;
+        padding-bottom: 2.9rem;
+        &--h {
+            line-height: 23px;
+            font-size: 21px;
+            margin-top: 0.9rem;
+            margin-bottom: -0.25rem;
+            @media only screen and (max-width : 441px) {
+                padding-left: 12%;
+                padding-right: 12%;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+            }
+            @media only screen and (min-width : 750px) {
+                font-size: 24px;
+             }
         }
+        &--p {
+            line-height: 18px;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            @media only screen and (min-width : 750px) {
+                font-size: 18px;
+             }
+        }
+    }
+    &__btn {
+        margin-top: 0.5rem;
+    }
+    
 }
-
 .headmenu {
     &__haut {
         display: flex;
-        &--bouton {
+        padding-top: 0.9rem;
+        padding-bottom: 0.6rem;
+        &--retour {
             border: none;
             background-color: transparent;
             position: absolute;
-            top: 0.5rem;
-            left: 1.5rem;
+            top: 0.9rem;
+            left: 1.7rem;
+            font-size: 24px;
+            @media only screen and (max-width : 750px) {
+                font-size: 18px;
+                position: absolute;
+                left: 1.2rem;
+             }
+
         }
         &--logo {
             width: 12rem;
             margin: auto;
+            @media only screen and (max-width : 750px) {
+               width: 8rem;
+            }
         }
     }
     &__bas {
-    &--img {
+    &__img {
         object-fit: cover;
         width: 100%;
-        height: 28rem;
-        /*height: 9.4rem;*/
+        height: 12rem;
+        @media only screen and (min-width : 750px) {
+            height: 30rem;
+        }
+        
     }
     &--bartitre {
-        font-size: 12px;
+        font-size: 11px;
+        font-weight: 100;
         font-family: 'shrikhand';
         background-color: $gris1;
         position: relative;
         z-index: 100;
         margin-top: -2rem;
+        padding: 0.5rem 1.8rem 0rem 0.9rem;
         border: solid transparent;
-        border-radius: 35px 35px 0 0;
+        border-radius: 30px 30px 0 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        @media only screen and (min-width : 750px) {
+            font-size: 15px;
+            justify-content: space-evenly;
+        }
         span {
-            font-size: 24px;
+            font-size: 22px;
             align-self: center;
+            @media only screen and (min-width : 750px) {
+                font-size: 25px;
+                justify-content: space-evenly;
+            }
         }
     }
 }
