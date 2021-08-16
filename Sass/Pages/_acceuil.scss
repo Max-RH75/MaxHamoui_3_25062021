@@ -1,7 +1,92 @@
-#nouv1, #nouv2 {
-    @include nouv;
+.fonctions {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  @media only screen and (max-width : 750px) {
+      flex-direction: column;
+      align-content: center;
+  }
+  @media only screen and (max-width: 810px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+  }
+  &__choix {
+      background-color: $gris1;
+      display: flex;
+      align-items: center;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+      padding: 1.2rem;
+      @include fonctbord;
+      @media only screen and (min-width: 810px) {
+          margin-left: 1rem;
+          margin-right: 1rem;
+      }
+      @media only screen and (max-width : 750px) {
+          /*max-width: 80%;*/
+          margin-left: auto;
+          margin-right: auto;
+      }
+      &:hover {
+          cursor: pointer;
+          background-color: $couleur-fonction;
+          .fonctico{
+              color: $couleur-primaire;
+          }
+      }
+      &__num {
+          @include bordnum;
+      }
+      &__textico {
+          text-align: center;
+          &--mobile {
+              font-size: 18px;
+              color: $couleur-icofonct;
+              margin-left: -0.7rem;
+              margin-right: 0.7rem;
+          }
+          &--list {
+              font-size: 14px;
+              color: $couleur-icofonct;
+              margin-left: -0.7rem;
+              margin-right: 0.7rem;
+          }
+          &--store {
+              font-size: 14px;
+              color: $couleur-icofonct;
+              margin-left: -0.7rem;
+              margin-right: 0.7rem;
+          }
+      }
+  }
+}
+  
+#bgblcmenus {
+  background-color: $gris1;
+  padding-bottom: 2rem;
+  margin-bottom: -1.5rem;
+}
+
+.titreh3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  &--fonc {
+    padding-top: 1rem;
+  }
+  &--rest {
+    padding-top: 3rem;
+  }
+  @media only screen and (max-width: 550px) {
+    text-align: start;
+    padding-left: 1rem;
   }
   
-  #fondmenus {
-    background-color: $gris1;
-  }
+}
