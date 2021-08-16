@@ -1,87 +1,91 @@
-.fonctions {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
-    @media only screen and (max-width: 810px) 
-        {flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;}
-        &__choix {
-            @include fonctbord;
-            font-size: 82%;
-            font-weight: bold;
-            width: 60%;
-            @media only screen and (min-width: 810px)
-            {margin-left: 1rem;
-            margin-right: 1rem;}
-            margin-bottom: 1rem;
-            padding: 1.2rem;
-            &:hover{
-                cursor: pointer;
-                background-color: $couleur-fonction;
-                color: $couleur-primaire;
-            }
-            &__num {
-                @include bordnum;
-                position: relative;
-                right: 2rem;
-            }
-            &__textico {
-                text-align: center;
-                &--mobile {
-                    margin-left: -0.7rem;
-                    margin-right: 0.7rem;
-                }
-                &--list {
-                    margin-left: -0.7rem;
-                    margin-right: 0.7rem;
-                }
-                &--store {
-                    margin-left: -0.7rem;
-                    margin-right: 0.7rem;
-                }
-        }
-    }
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+    @media only screen and (max-width : 750px) {
+        flex-direction: column;
+    }
     .blocmenu1, .blocmenu3 {
         margin-left: auto;
         margin-right: 1rem;
-        @media only screen and (max-width: 750px) 
-        {margin-right: auto;}
+        @media only screen and (max-width: 750px) {
+            margin-right: auto;
+        }
     }
     .blocmenu2, .blocmenu4 {
         margin-left: 1rem;
         margin-right: auto;
-        @media only screen and (max-width:750px) 
-        {margin-left: auto;}
+        @media only screen and (max-width:750px) {
+            margin-left: auto;
+        }
     }
-
     .blocmenu {
+        position: relative;
         width: 50%;
         height: 13.3rem;
         display: flex;
         flex-direction: column;
         flex-basis: 40%;
         margin-bottom: 0.1rem;
-        @media only screen and (min-width:750px) 
-        {margin-bottom: 0.7rem;}
-        
         @include bordrond;
+        @media only screen and (max-width : 750px) {
+            min-width: 89.60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.2rem;
+        }
+        @media only screen and (min-width:750px) {
+            height: 16rem;
+        }
+        @media only screen and (min-width:750px) {
+            margin-bottom: 0.7rem;
+        }
         &__img {
             object-fit: cover;
             @include bordrond2;
             width: 100%;
-            height: 9.2rem;
+            height: 9.1rem;
+            @media only screen and (min-width:750px) {
+                height: 12.1rem;
+              }
+              @media only screen and (min-width : 430px ) and (max-width : 750px) {
+                object-position: 50% 65%;
+              &--position {
+                object-position: 50% 55%;
+              }
+              }
+            &--position1 {
+                @media only screen and (max-width:400px) {
+                object-position: 50% 100%;
+                }
+            }
+            &--position2 {
+                object-position: 50% 60%;
+            }
+            &--position3 {
+                object-position: 50% 100%;
+                @media only screen and (min-width:400px) {
+                    object-position: 50% 64%;
+                    }
+                @media only screen and (max-width:400px) {
+                object-position: 50% 100%;
+                }
+                @media only screen and (min-width:1060px) {
+                    object-position: 50% 78%;
+                    }
+            }
+            &--position4 {
+                object-position: 50% 100%;
+                @media only screen and (max-width:400px) {
+                    object-position: 50% 96%;
+                }
+                @media only screen and (min-width:400px) and (max-width:750px) {
+                    object-position: 50% 75%;
+                }
+                @media only screen and (min-width:1200px) {
+                    object-position: 50% 77.5%;
+                }
+            }
         }
         &__contenu {
             display: flex;
@@ -91,20 +95,25 @@
                 line-height: 0;
                 h4 {
                 font-size: 14px;
-            }
-            p {
+                }
+                p {
                 font-size: 13px;
                 font-family: 'roboto', sans-serif;
                 font-weight: 400;
+                margin-bottom: 1.2rem;
+                }
             }
-        }
-            &--ico {
+            &__ico {
                 font-size: 1.3rem;
                 align-self: center;
                 margin-right: 1.2rem;
                 color: black;
-      }
-    }
+            }
+        }
+        &__nouv {
+            @include nouv;
+
+        }
     }
 }
 
@@ -115,39 +124,99 @@
     margin-bottom: -1.5rem;
 }
 
+.menus {
+    @media only screen and (min-width: 1052px) {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1 px solid black;
+    section {
+        width: 32%;
+    }
+    }
+    
+}
+
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    @media only screen and (max-width : 750px) {
+        flex-direction: column;
+    }
     @media only screen and (min-width: 750px) and (max-width: 1053px) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &__plats {
-        margin-right: 1rem;
-        margin-left: 1rem;
-        /*width: 23rem;*/
-        width: 80%;
-        @include bordrond;
-        line-height: 0;
-        margin-bottom: 1rem;
+        background-color: white;
+        @include bordrond3;
+        overflow: hidden;
+        margin: 0.4rem 0;
         display: flex;
-        justify-content: space-between;
-        &__hp h4 {
+        @media only screen and (min-width: 540px) and (max-width: 1053px) {
+            width: 85%;
+        }
+        /*@media only screen and (max-width: 540px) and (min-width: 750px) {
+            width: 80%;
+        }
+        @media only screen and (min-width : 750px) {
+            width: 70%;
+        }*/
+        &:hover {
+            cursor: pointer;
+            }
+        
+        &:hover &__selection {
+                animation: check 0.6s forwards;
+                i {
+                    animation: rotate 0.75s forwards;
+                }
+        }
+        &__hp {
+            padding-left: 0.6rem;
+            align-self: center;
+            overflow: hidden;
+            flex: 1;
+            line-height: 19.5px;;
+            h4, p {
+            margin: 0;
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            }
+            h4 {
+                font-size: 14px;
+            }
+            p {
+                font-size: small;
+            }
         }
         &__prix {
+            text-indent: 0.7rem;
+            padding-right: 1.4rem;
+            margin-bottom: 0.65rem;
+            font-size: 13px;
+            font-weight: bold;
             align-self: flex-end;
         }
         &__selection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 0%;
+            background-color: $couleur-tertiaire;
+            border-radius: 0 11px 11px 0;
+            i {
+                font-size: 17.2px;
+                color: white;
+                opacity: 0;
+            }
         }
-        @media only screen and (min-width: 750px) and (max-width: 1053px) {
-        width: 40rem;
-        }
+        
     }
 }
