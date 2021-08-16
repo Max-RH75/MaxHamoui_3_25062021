@@ -1,11 +1,42 @@
 
+#chargementbg {
+  position: fixed;
+  margin: 0;
+  background-color: $couleur-tertiaire;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  animation: fadeout 1s ease 2s both;
+  #chargementbo {
+    font-size: 22px;
+    border-bottom : 10px solid $couleur-primaire;
+    border-top: 10px solid $couleur-secondaire;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1.5s ease-in-out infinite, fadeout 1s ease 2s;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    }
+  #chargementomf {
+    animation: fadeout 1s ease 2s;
+    width: 8rem;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+}
+
 @keyframes check {
     0% {
       width: 0%;
     }
   
     100% {
-      width: 25%;
+      width: 17%;
     }
   }
   
