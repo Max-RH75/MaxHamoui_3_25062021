@@ -106,3 +106,8 @@
         bottom: 13.15rem;
     }
 }
+  
+@mixin animenu {
+    animation: apparition 5s both;
+    opacity: 0;
+}
