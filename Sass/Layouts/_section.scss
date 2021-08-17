@@ -117,7 +117,7 @@
     }
 }
 
-.bgmenus {
+.bgpagem {
     background-color: $gris1;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -152,20 +152,15 @@
         align-items: center;
     }
     &__plats {
-        background-color: white;
+        @include animenu;
         @include bordrond3;
+        display: flex;
+        background-color: white;
         overflow: hidden;
         margin: 0.4rem 0;
-        display: flex;
         @media only screen and (min-width: 540px) and (max-width: 1053px) {
             width: 85%;
         }
-        /*@media only screen and (max-width: 540px) and (min-width: 750px) {
-            width: 80%;
-        }
-        @media only screen and (min-width : 750px) {
-            width: 70%;
-        }*/
         &:hover {
             cursor: pointer;
             }
@@ -199,7 +194,7 @@
         &__prix {
             text-indent: 0.7rem;
             padding-right: 1.4rem;
-            margin-bottom: 0.65rem;
+            margin-bottom: 0.75rem;
             font-size: 13px;
             font-weight: bold;
             align-self: flex-end;
