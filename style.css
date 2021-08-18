@@ -434,7 +434,7 @@ ul {
   padding-left: 0;
 }
 
-footer {
+.footer {
   font-size: 13px;
   line-height: 22px;
   margin-top: 1rem;
@@ -443,18 +443,15 @@ footer {
   padding-top: 0.5rem;
   padding-left: 1.15rem;
   padding-bottom: 2rem;
-  height: 7.6rem;
+  height: 7.5rem;
 }
 
-footer .grillef span {
-  margin-right: 0.4rem;
+.footer--acceuil {
+  margin-top: 1.9rem;
 }
 
-footer .grillef .mains {
-  font-size: 11px;
-}
-
-footer .omffooter {
+.footer__omf {
+  margin-top: 0.6rem;
   font-size: 30px;
   color: white;
   font-family: 'Shrikhand', cursive;
@@ -462,18 +459,46 @@ footer .omffooter {
 }
 
 @media only screen and (max-width: 750px) {
-  footer .omffooter {
+  .footer__omf {
     font-size: 15px;
   }
 }
 
+.footer__grille {
+  margin-top: -0.3rem;
+}
+
+.footer__grille span {
+  margin-right: 0.4rem;
+}
+
+.footer__grille__pr {
+  cursor: pointer;
+}
+
+.footer__grille__dp {
+  cursor: pointer;
+}
+
+.footer__grille__ml {
+  cursor: pointer;
+}
+
+.footer__grille .mains {
+  font-size: 11px;
+}
+
+/*.grillef {
+    
+}*/
 @media only screen and (min-width: 750px) {
-  .omffooter {
+  .footer__omf {
     position: relative;
     right: 0.7rem;
     text-align: center;
+    margin-top: 1.5rem;
   }
-  .grillef {
+  .footer__grille {
     font-size: 15px;
     padding-left: 5%;
     margin-top: 2rem;
@@ -481,19 +506,19 @@ footer .omffooter {
     display: grid;
         grid-template-areas: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
   }
-  .grillef__pr {
+  .footer__grille__pr {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .grillef__dp {
+  .footer__grille__dp {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-  .grillef__ml {
+  .footer__grille__ml {
     -ms-grid-column: 3;
     grid-column: 3;
   }
-  .grillef__c {
+  .footer__grille__c {
     -ms-grid-column: 4;
     grid-column: 4;
   }
@@ -512,6 +537,7 @@ footer .omffooter {
   padding-left: 0;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
+  margin-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -661,7 +687,7 @@ footer .omffooter {
 }
 
 .titreh3--rest {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
 }
 
 @media only screen and (max-width: 550px) {
@@ -724,20 +750,11 @@ footer .omffooter {
           flex-direction: column;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  margin-bottom: 0.1rem;
+  margin-bottom: 1.7rem;
   border: 0 transparent solid;
   border-radius: 11px;
   -webkit-box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.143);
           box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.143);
-}
-
-@media only screen and (max-width: 750px) {
-  .container .blocmenu {
-    min-width: 89.60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.2rem;
-  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -746,9 +763,12 @@ footer .omffooter {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 750px) {
   .container .blocmenu {
-    margin-bottom: 0.7rem;
+    min-width: 89.60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.05rem;
   }
 }
 
@@ -983,8 +1003,8 @@ footer .omffooter {
 
 .icocoeur:hover {
   opacity: 0;
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
   cursor: pointer;
   pointer-events: all;
 }
@@ -1049,7 +1069,7 @@ footer .omffooter {
   0% {
     opacity: 0;
   }
-  20% {
+  10% {
     opacity: 1;
   }
   100% {
@@ -1061,7 +1081,7 @@ footer .omffooter {
   0% {
     opacity: 0;
   }
-  20% {
+  10% {
     opacity: 1;
   }
   100% {
