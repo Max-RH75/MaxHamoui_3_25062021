@@ -3,7 +3,8 @@ ul {
     padding-left: 0;
 }
 
-footer {
+
+.footer {
     font-size: 13px;
     line-height: 22px;
     margin-top: 1rem;
@@ -12,16 +13,12 @@ footer {
     padding-top: 0.5rem;
     padding-left: 1.15rem;
     padding-bottom: 2rem;
-    height: 7.6rem;
-    .grillef {
-        span {
-            margin-right: 0.4rem;
-        }
-        .mains {
-            font-size: 11px;
-        }
+    height: 7.5rem;
+    &--acceuil {
+        margin-top: 1.9rem;
     }
-    .omffooter {
+    &__omf {
+        margin-top: 0.6rem;
         font-size: 30px;
         color: white;
         font-family: 'Shrikhand', cursive;
@@ -30,33 +27,58 @@ footer {
             font-size: 15px;
         }
     }
+    &__grille {
+        margin-top: -0.3rem;
+        span {
+            margin-right: 0.4rem;
+        }
+        &__pr {
+            cursor: pointer;
+        }
+        &__dp {
+            cursor: pointer;
+        }
+        &__ml {
+            cursor: pointer;
+        }
+        
+        .mains {
+            font-size: 11px;
+        }
+    }
 }
+
+/*.grillef {
+    
+}*/
 
 @include RSdesk {
 
-    .omffooter {
+    .footer {
+        &__omf {
         position: relative; 
         right: 0.7rem;
         text-align: center;
+        margin-top: 1.5rem;
+        }
+        &__grille {
+            font-size: 15px;
+            padding-left: 5%;
+            margin-top: 2rem;
+            display: grid;
+            grid-template-areas: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+            &__pr {
+                grid-column: 1;
+            }
+            &__dp {
+                grid-column: 2;
+            }
+            &__ml {
+                grid-column: 3;
+            }
+            &__c {
+                grid-column: 4;
+            }
+        }
     }
-
-    .grillef {
-        font-size: 15px;
-        padding-left: 5%;
-        margin-top: 2rem;
-        display: grid;
-        grid-template-areas: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-        &__pr {
-        grid-column: 1;
-        }
-	    &__dp {
-        grid-column: 2;
-        }
-        &__ml {
-        grid-column: 3;
-        }
-        &__c {
-        grid-column: 4;
-    }
-}
 }
