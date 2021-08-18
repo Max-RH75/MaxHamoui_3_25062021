@@ -30,23 +30,23 @@
   }
 }
 
-.icoheart {
+.icocoeur {
+  position: relative;
+  z-index: 1;
+	background-color: $gris1;
   &:hover {
+    opacity: 0;
+    transition: .8s;
     cursor: pointer;
     pointer-events: all;
   }
-  &::before {
-    content: "\f004";
-    transition: color 0.8s ease;
-  }
-  &:hover::before {
-    font-weight: bold;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(180deg, $couleur-primaire, $couleur-secondaire);
-    cursor: pointer;
-  }
+}
+
+.icocoeur2 {
+	color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(180deg, $couleur-primaire, $couleur-secondaire);
 }
 
 @keyframes check {

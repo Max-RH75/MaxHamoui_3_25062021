@@ -26,15 +26,17 @@ footer {
         color: white;
         font-family: 'Shrikhand', cursive;
         font-weight: 200;
-        @media only screen and (max-width: 750px) {
+        @include RSmob {
             font-size: 15px;
         }
     }
 }
 
-@media only screen and (min-width: 750px) {
+@include RSdesk {
 
     .omffooter {
+        position: relative; 
+        right: 0.7rem;
         text-align: center;
     }
 

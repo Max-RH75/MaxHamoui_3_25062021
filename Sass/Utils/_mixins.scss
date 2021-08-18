@@ -3,7 +3,7 @@
 @mixin bordrond {
     border: 0 transparent solid;
     border-radius: 11px;
-    box-shadow: 0rem 0.1rem 0.8rem rgba(0, 0, 0, 0.143);
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.143);
 }
 
 @mixin bordrond2 {
@@ -12,7 +12,7 @@
 }
 
 @mixin bordrond3 {
-    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.143);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.143);
     border-radius: 11px;
     width: 93%;
     height: 3.5rem;
@@ -102,7 +102,7 @@
     font-weight: 500;
     padding-top: 7px;
     padding-bottom: 5px;
-    @media only screen and (min-width:750px) {
+    @media only screen and (min-width: 750px) {
         bottom: 13.15rem;
     }
 }
@@ -110,4 +110,16 @@
 @mixin animenu {
     animation: apparition 5s both;
     opacity: 0;
+}
+
+@mixin RSmob {
+    @media only screen and (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin RSdesk {
+    @media only screen and (min-width: 750px) {
+        @content;
+    }
 }
