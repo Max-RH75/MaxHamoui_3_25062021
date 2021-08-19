@@ -1,0 +1,25 @@
+{
+  "name": "oc-dw-projet-3-ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet Openclassrooms Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Sass/main.scss:./Public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max-RH75/MaxHamoui_3_25062021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Max-RH75/MaxHamoui_3_25062021/issues"
+  },
+  "homepage": "https://github.com/Max-RH75/MaxHamoui_3_25062021#readme"
+}
