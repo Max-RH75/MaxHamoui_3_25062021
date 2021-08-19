@@ -258,7 +258,7 @@
 }
 
 .headhome__lieu span {
-  margin-right: 0.8rem;
+  margin-right: 0.65rem;
 }
 
 .headhome__text {
@@ -276,11 +276,21 @@
 
 @media only screen and (max-width: 441px) {
   .headhome__text__h {
-    padding-left: 12%;
-    padding-right: 12%;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 441px) and (min-width: 333px) and (max-width: 377px) {
+  .headhome__text__h {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 441px) and (min-width: 377px) and (max-width: 430px) {
+  .headhome__text__h {
+    width: 60%;
   }
 }
 
@@ -295,6 +305,23 @@
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+@media only screen and (max-width: 377px) {
+  .headhome__text__p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 377px) and (max-width: 430px) {
+  .headhome__text__p {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -499,12 +526,15 @@ ul {
     margin-top: 1.5rem;
   }
   .footer__grille {
+    position: relative;
     font-size: 15px;
-    padding-left: 5%;
+    padding-left: 2%;
     margin-top: 2rem;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 25% 25% 25% 25%;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template: 25% 25% 25% 25% / 25% 25% 25% 25%;
   }
   .footer__grille__pr {
     -ms-grid-column: 1;
@@ -513,14 +543,20 @@ ul {
   .footer__grille__dp {
     -ms-grid-column: 2;
     grid-column: 2;
+    position: absolute;
+    left: 2rem;
   }
   .footer__grille__ml {
     -ms-grid-column: 3;
     grid-column: 3;
+    position: absolute;
+    left: 2rem;
   }
   .footer__grille__c {
     -ms-grid-column: 4;
     grid-column: 4;
+    position: absolute;
+    left: 2rem;
   }
 }
 
@@ -1006,7 +1042,6 @@ ul {
   -webkit-transition: 1.2s;
   transition: 1.2s;
   cursor: pointer;
-  pointer-events: all;
 }
 
 .icocoeur2 {
