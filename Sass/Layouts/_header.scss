@@ -24,7 +24,7 @@
             font-size: 16px;
          }
         span {
-            margin-right: 0.8rem;
+            margin-right: 0.65rem;
         }
     }
     &__text {
@@ -37,21 +37,36 @@
             margin-top: 0.9rem;
             margin-bottom: -0.25rem;
             @media only screen and (max-width : 441px) {
-                padding-left: 12%;
-                padding-right: 12%;
                 margin-left: auto;
                 margin-right: auto;
-                width: 70%;
+                width: 80%;
+                @media only screen and (min-width: 333px) and (max-width: 377px) {
+                    width: 70%;
+                }
+                @media only screen and (min-width:377px) and (max-width:430px) {
+                    width: 60%;
+                }
             }
             @include RSdesk {
                 font-size: 24px;
-             }
+             } 
         }
         &__p {
             line-height: 18px;
             font-size: 15px;
             font-weight: 300;
             margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            @media only screen and (max-width : 377px) {
+                margin-left: auto;
+                margin-right: auto;
+                width: 95%;
+            }
+            @media only screen and (min-width:377px) and (max-width:430px) {
+                width: 80%;
+            }
             @include RSdesk {
                 font-size: 18px;
              }
