@@ -70,21 +70,23 @@ ul {
             grid-template: 25% 25% 25% 25% / 25% 25% 25% 25%;
             &__pr {
                 grid-column: 1;
+                position: absolute;
+                left: 2rem;
             }
             &__dp {
                 grid-column: 2;
                 position: absolute;
-                left: 2rem;
+                left: 5rem;
             }
             &__ml {
                 grid-column: 3;
                 position: absolute;
-                left: 2rem;
+                left: 5rem;
             }
             &__c {
                 grid-column: 4;
                 position: absolute;
-                left: 2rem;
+                left: 4rem;
             }
         }
     }
