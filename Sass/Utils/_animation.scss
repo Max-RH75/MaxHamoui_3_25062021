@@ -52,7 +52,6 @@
   0% {
     width: 0%;
   }
-  
   100% {
     width: 17%;
   }
@@ -62,11 +61,9 @@
   0% {
     transform: rotate(0deg);
   }
-  
   50% {
     opacity: 1;
   }
-  
   100% {
     transform: rotate(360deg);
     opacity: 1;
@@ -77,34 +74,32 @@
   0% {
     opacity: 0;
   }
-
   10% { 
     opacity: 1;
   }
-
   100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeout {
-    to {
-      opacity : 0;
-      z-index: -1000;
-    }
+  to {
+    opacity : 0;
+    z-index: -1000;
   }
+}
 
 @keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0%{
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  @for $i from 0 to 11 {
-    .delai-#{$i} {
-      animation-delay: #{$i/4}s;
-    }
+@for $i from 0 to 11 {
+  .delai-#{$i} {
+    animation-delay: #{$i/4}s;
   }
+}

@@ -1,3 +1,4 @@
+
 .fonctions {
   display: flex;
   flex-wrap: nowrap;
@@ -31,7 +32,6 @@
           margin-right: 1rem;
       }
       @include RSmob {
-          /*max-width: 80%;*/
           margin-left: auto;
           margin-right: auto;
       }
@@ -215,7 +215,6 @@
       }
       &__nouv {
           @include nouv;
-
       }
   }
 }
