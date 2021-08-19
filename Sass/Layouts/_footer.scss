@@ -62,22 +62,29 @@ ul {
         margin-top: 1.5rem;
         }
         &__grille {
+            position: relative;
             font-size: 15px;
-            padding-left: 5%;
+            padding-left: 2%;
             margin-top: 2rem;
             display: grid;
-            grid-template-areas: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+            grid-template: 25% 25% 25% 25% / 25% 25% 25% 25%;
             &__pr {
                 grid-column: 1;
             }
             &__dp {
                 grid-column: 2;
+                position: absolute;
+                left: 2rem;
             }
             &__ml {
                 grid-column: 3;
+                position: absolute;
+                left: 2rem;
             }
             &__c {
                 grid-column: 4;
+                position: absolute;
+                left: 2rem;
             }
         }
     }
