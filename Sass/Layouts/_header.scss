@@ -131,29 +131,36 @@
         padding: 0.5rem 1.5rem 0 0.9rem;
         border: solid transparent;
         border-radius: 30px 30px 0 0;
+        @media only screen and (min-width:1400px) {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1400px;
+            padding: 0;
+            border: transparent;
+        }
         @include RSdesk {
             font-size: 15px;
             justify-content: space-evenly;
         }
-        &__ico {
-            position: relative;
-            font-size: 22px;
-            align-self: center;
+        &__icos {
+            @include icos;
             @include RSdesk {
-                font-size: 32px;
-                justify-content: space-evenly;
+                font-size: 30px;
             }
-            &__vide {
-                color: black;
+            &:hover::before {
+                opacity: 1;
             }
-            &__rempli {
-                z-index: 0;
-                &--position {
-                position: absolute;
-                left: 0; bottom: 0.6rem;
-                @include RSmob {
-                    bottom: 0.45rem;
-                }
+            &::before {
+                @include icos-before;
+            }
+        &__coeur {
+            @include coeur;
+        }
+        }
+        &__icos:hover {
+            .coeur {
+                &--coeur1 {
+                    opacity: 0;
                 }
             }
         }
