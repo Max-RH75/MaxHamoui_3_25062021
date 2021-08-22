@@ -1,77 +1,64 @@
-
 .fonctions {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-  padding-left: 0;
-  /*margin-left: 0.4rem;
-  margin-right: 0.4rem;*/
-  margin-bottom: 2.5rem;
-  @include RSmob {
-      flex-direction: column;
-      align-content: center;
-  }
-  @media only screen and (max-width: 810px) {
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-content: center;
-      /*margin-left: 0.5rem;
-      margin-right: 0.5rem;*/
-  }
-  &__choix {
-      background-color: $gris1;
-      display: flex;
-      align-items: center;
-      margin-top: 0.3rem;
-      margin-bottom: 1rem;
-      padding: 1.2rem;
-      @include fonctbord;
-      /*@media only screen and (min-width: 810px) {
-          margin-left: 1rem;
-          margin-right: 1rem;
-      }*/
-      /*@include RSmob {
-          margin-left: auto;
-          margin-right: auto;
-      }*/
-      &:hover {
-          cursor: pointer;
-          background-color: $couleur-fonction;
-          .fonctico{
-              color: $couleur-primaire;
-          }
-      }
-      &__num {
-          @include bordnum;
-      }
-      &__textico {
-          text-align: center;
-          &--mobile {
-              font-size: 18px;
-              color: $couleur-icofonct;
-              margin-left: -0.7rem;
-              margin-right: 0.7rem;
-          }
-          &--list {
-              font-size: 14px;
-              color: $couleur-icofonct;
-              margin-left: -0.7rem;
-              margin-right: 0.7rem;
-          }
-          &--store {
-              font-size: 14px;
-              color: $couleur-icofonct;
-              margin-left: -0.7rem;
-              margin-right: 0.7rem;
-          }
-      }
-  }
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 2.5rem;
+    @include RSmob {
+        flex-direction: column;
+        align-content: center;
+    }
+    @media only screen and (max-width: 810px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    &__choix {
+        background-color: $gris1;
+        display: flex;
+        align-items: center;
+        margin-top: 0.3rem;
+        margin-bottom: 1rem;
+        padding: 1.2rem;
+        @include fonctbord;
+        &:hover {
+            cursor: pointer;
+            background-color: $couleur-fonction;
+            .fonctico{
+                color: $couleur-primaire;
+            }
+        }
+        &__num {
+            @include bordnum;
+        }
+        &__textico {
+            text-align: center;
+            &--mobile {
+                font-size: 18px;
+                color: $couleur-icofonct;
+                margin-left: -0.7rem;
+                margin-right: 0.7rem;
+            }
+            &--list {
+                font-size: 14px;
+                color: $couleur-icofonct;
+                margin-left: -0.7rem;
+                margin-right: 0.7rem;
+            }
+            &--store {
+                font-size: 14px;
+                color: $couleur-icofonct;
+                margin-left: -0.7rem;
+                margin-right: 0.7rem;
+            }
+        }
+    }
 }
   
-#bgblcmenus {
+#section-bgmain {
     max-width: 1400px;
     margin: 0 auto;
     background-color: $gris1;
@@ -86,6 +73,10 @@
     font-size: 20px;
     &--fonc {
         padding-top: 1rem;
+        @media only screen and (min-width: 810px) {
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+        }
     }
     &--rest {
         padding-top: 2.5rem;
@@ -97,26 +88,26 @@
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  @include RSmob {
-      flex-direction: column;
-}
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include RSmob {
+        flex-direction: column;
+    }
     .blocmenu1, .blocmenu3 {
         margin-left: auto;
         margin-right: 1rem;
         @include RSmob {
-        margin-right: auto;
+            margin-right: auto;
+        }
     }
-}
     .blocmenu2, .blocmenu4 {
         margin-left: 1rem;
         margin-right: auto;
         @include RSmob {
             margin-left: auto;
+        }
     }
-}
     .blocmenu {
         position: relative;
         width: 50%;
@@ -198,29 +189,23 @@
                     margin-bottom: 1.2rem;
                 }
             }
-            &__icos {
-                margin-right: 1rem;
-                @include icos;
+            &__ico {
+                font-size: 1.3rem;
+                align-self: center;
+                margin-right: 1.2rem;
                 @include RSdesk {
-                    font-size: 26px;
-                    margin-bottom: 0.3rem;
+                  font-size: 1.55rem;
+                  padding-right: 0.3rem;
                 }
-                &:hover::before {
-                    opacity: 1;
+                &__vide {
+                  color: black;
                 }
-                &::before {
-                    @include icos-before;
+                &__rempli {
+                &--position {
+                  position: absolute;
+                  right: 0;
                 }
-                &__coeur {
-                    @include coeur;
-                }
-            }
-            &__icos:hover {
-                .coeur {
-                    &--coeur1 {
-                        opacity: 0;
-                    }
-                }
+              }
             }
         }
         &__nouv {

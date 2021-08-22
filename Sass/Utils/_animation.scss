@@ -1,4 +1,3 @@
-
 #chargementbg {
   position: fixed;
   margin: 0;
@@ -30,55 +29,12 @@
   }
 }
 
-.icocoeur {
-  position: relative;
-  z-index: 1;
-	background-color: $gris1;
-  &:hover {
-    opacity: 0;
-    transition: 1.2s;
-    cursor: pointer;
-  }
-}
-
-.icocoeur2 {
-	color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(180deg, $couleur-primaire, $couleur-secondaire);
-}
-
-@keyframes check {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 17%;
-  }
-}
-  
-@keyframes rotate {
-  0% {
+@keyframes spin {
+  from {
     transform: rotate(0deg);
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
+  to {
     transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  10% { 
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -89,12 +45,18 @@
   }
 }
 
-@keyframes spin{
-  0%{
-    transform: rotate(0deg);
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  15% { 
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -102,4 +64,31 @@
   .delai-#{$i} {
     animation-delay: #{$i/4}s;
   }
+}
+
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 17%;
+  }
+}
+
+.icocoeur {
+  position: relative;
+  z-index: 1;
+	background-color: $gris1;
+  &:hover {
+    opacity: 0;
+    transition: .8s;
+    cursor: pointer;
+  }
+}
+
+.icocoeur2 {
+	color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(180deg, $couleur-primaire, $couleur-secondaire);
 }

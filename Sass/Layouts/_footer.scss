@@ -1,20 +1,22 @@
-
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-
 .footer {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 13px;
     line-height: 22px;
     margin-top: 1rem;
     color: white;
-    background-color: $couleur-footer;
+    background-color: $couleur-quaternaire;
     padding-top: 0.5rem;
-    padding-left: 1.15rem;
     padding-bottom: 2rem;
     height: 7.5rem;
+    @include RSmob {
+        padding-left: 1.15rem;
+    }
     &--acceuil {
         margin-top: 1.9rem;
     }
@@ -29,6 +31,8 @@ ul {
         }
     }
     &__grille {
+        max-width: 1400px;
+        margin: 0 auto;
         margin-top: -0.3rem;
         span {
             margin-right: 0.4rem;
@@ -52,6 +56,7 @@ ul {
 @include RSdesk {
 
     .footer {
+        padding-bottom: 3rem;
         &__omf {
         position: relative; 
         right: 0.7rem;
@@ -62,7 +67,7 @@ ul {
             position: relative;
             font-size: 15px;
             padding-left: 2%;
-            margin-top: 2rem;
+            margin-top: 3rem;
             display: grid;
             grid-template: 25% 25% 25% 25% / 25% 25% 25% 25%;
             &__pr {
